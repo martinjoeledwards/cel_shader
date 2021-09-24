@@ -3,7 +3,6 @@
 //
 //
 
-//testing: pushing variadics branch
 
 // TODO: advanced light calculations; self-normalizing direction class?
 #include <iostream>
