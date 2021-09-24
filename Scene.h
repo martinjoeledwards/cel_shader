@@ -10,6 +10,7 @@
 #include "Light.h"
 #include "Color.h"
 #include <cmath>
+#include <cstdarg>
 
 
 // Contains objects, ambient light, and point lights.
@@ -28,12 +29,26 @@ public:
     void setNumBounces(int num){
          numBounces = num;
      }
-    void AddObject(Object* object){
-        objects.push_back(object);
+
+    void AddObjects(Object* t){
+        this->objects.push_back(t);
     }
-    void AddLight(Light* light){
-         lights.push_back(light);
+
+    template<typename... Args>
+    void AddObjects(Object* t, Args... args){
+         this->objects.push_back(t);
+        AddObjects(args...);
      }
+
+    void AddLights(Light* t){
+        this->lights.push_back(t);
+    }
+
+    template<typename... Args>
+    void AddLights(Light* t, Args... args){
+        this->lights.push_back(t);
+        AddLights(args...);
+    }
 
     std::pair<Object*, double> getClosestObject(Point ray_start, Point ray_dir){
         double lowest_t = 99999;

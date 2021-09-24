@@ -5,7 +5,7 @@
 
 //testing: pushing variadics branch
 
-// TODO:  variadic parameters; advanced light calculations; self-normalizing direction class?
+// TODO: advanced light calculations; self-normalizing direction class?
 #include <iostream>
 #include <vector>
 #include <thread>
@@ -95,17 +95,12 @@ int main() {
     myScene.setNumBounces(num_bounces);
 
 
-    //Add objects
-    myScene.AddObject(&reflect_plane);
-    myScene.AddObject(&triangle);
-    myScene.AddObject(&redSphere);
-    myScene.AddObject(&blueSphere);
-    myScene.AddObject(&greenSphere);
+    myScene.AddObjects(&reflect_plane, &triangle, &redSphere, &blueSphere);
+    myScene.AddObjects(&greenSphere);
 
     // Add lights
-    myScene.AddLight(&sunlight);
-    myScene.AddLight(&pointlight);
-    myScene.AddLight(&pointlightup);
+    myScene.AddLights(&sunlight, &pointlight);
+    myScene.AddLights(&pointlightup);
 
     Progress my_prog(y_dim);
 
@@ -126,7 +121,7 @@ int main() {
                 }
             }
 
-            threads.push_back(std::thread(renderRow, myCamera, myScene, myGrid, j, x_dim, sample_subdiv));
+            threads.emplace_back(renderRow, myCamera, myScene, myGrid, j, x_dim, sample_subdiv);
 
             my_prog.print_progress(j);
         }

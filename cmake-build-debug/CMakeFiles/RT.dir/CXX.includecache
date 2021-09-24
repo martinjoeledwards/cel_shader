@@ -22,25 +22,9 @@ string
 Point.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.cpp
-DataGrid.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.h
-fstream
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/fstream
-iostream
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/iostream
-Helpers.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
-Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
-
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.h
 Color.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
-
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.cpp
-Helpers.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
 
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
 string
@@ -100,6 +84,10 @@ Color.h
 Point.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
 
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.cpp
+Scene.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h
+
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h
 vector
 -
@@ -112,6 +100,8 @@ Light.h
 Color.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
 cmath
+-
+cstdarg
 -
 
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.h
@@ -167,6 +157,4 @@ Triangle.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.h
 PointLight.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.h
-chrono
--
 

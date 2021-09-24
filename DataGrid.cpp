@@ -54,5 +54,5 @@ void DataGrid::save_image(std::string folder) {
 
     ofs.close();
 
-    std::cout << "Image printed to " <<  filename << std::endl;
+    std::cout << "Image saved to " <<  filename << std::endl;
 }
