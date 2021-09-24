@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="RT"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RT">
+				<Option output="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/RT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RT/fast">
+				<Option output="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/RT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/x86_64-pc-cygwin"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include/c++/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/raytracer.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
