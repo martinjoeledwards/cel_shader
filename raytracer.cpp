@@ -1,8 +1,9 @@
 //
 //  Martin Edwards Sept. 2021
 //
-//sets up general stream and uses stuff
+//
 
+//testing: pushing variadics branch
 
 // TODO:  variadic parameters; advanced light calculations; self-normalizing direction class?
 #include <iostream>
