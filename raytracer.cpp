@@ -3,7 +3,7 @@
 //
 //
 
-
+// FIXME: axis-aligned box objects, Area lights and shadow calculations, bounding box tree
 // TODO: advanced light calculations; self-normalizing direction class?
 #include <iostream>
 #include <vector>

@@ -8,6 +8,8 @@
 #include "Point.h"
 #include "Light.h"
 
+//FIXME: calculate intensity of the light based on inverse square law
+
 class PointLight : public Light{
 public:
     PointLight(Color light, Point position) : Light(light){
