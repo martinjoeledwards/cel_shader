@@ -16,3 +16,8 @@ std::string get_time_string(){
 
     return month + "_" + day + "_" + hour + "-" + min + "-" + sec;
 }
+
+double getRandDouble(double min_val, double max_val) {
+    double normalized = double(rand()) / (double(RAND_MAX) + 1.0);
+    return ((max_val - min_val) * normalized) + min_val;
+}

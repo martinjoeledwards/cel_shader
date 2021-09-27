@@ -8,6 +8,7 @@
 #include <iostream>
 #include <math.h>
 #include "UVPoint.h"
+//#include "Helpers.h"
 
 //supports vectors / points; basically a triple value struct with operations
 
@@ -94,6 +95,8 @@ Point reflect_vector(Point direction, Point normal);
 double get_incidence_angle(Point incident, Point normal);
 
 Point refract_vec(double ior, Point incident, Point normal);
+
+Point jitter_vector(Point vector, double amount);
 
 std::ostream& operator<<(std::ostream& os, const Point& p);
 

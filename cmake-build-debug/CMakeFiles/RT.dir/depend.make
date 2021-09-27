@@ -5,6 +5,7 @@ CMakeFiles/RT.dir/Camera.cpp.o: \
  ../Camera.cpp \
  ../Camera.h \
  ../Color.h \
+ ../Helpers.h \
  ../Point.h \
  ../Ray.h \
  ../UVPoint.h
@@ -26,10 +27,32 @@ CMakeFiles/RT.dir/Helpers.cpp.o: \
  ../Helpers.h \
  ../Point.h \
  ../UVPoint.h
-CMakeFiles/RT.dir/Light.cpp.o: \
+CMakeFiles/RT.dir/Lights/BoxLight.cpp.o: \
  ../Color.h \
- ../Light.cpp \
- ../Light.h \
+ ../Helpers.h \
+ ../Lights/BoxLight.cpp \
+ ../Lights/BoxLight.h \
+ ../Lights/Light.h \
+ ../Point.h \
+ ../UVPoint.h
+CMakeFiles/RT.dir/Lights/Light.cpp.o: \
+ ../Color.h \
+ ../Lights/Light.cpp \
+ ../Lights/Light.h \
+ ../Point.h \
+ ../UVPoint.h
+CMakeFiles/RT.dir/Lights/PointLight.cpp.o: \
+ ../Color.h \
+ ../Lights/Light.h \
+ ../Lights/PointLight.cpp \
+ ../Lights/PointLight.h \
+ ../Point.h \
+ ../UVPoint.h
+CMakeFiles/RT.dir/Lights/SunLight.cpp.o: \
+ ../Color.h \
+ ../Lights/Light.h \
+ ../Lights/SunLight.cpp \
+ ../Lights/SunLight.h \
  ../Point.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Material.cpp.o: \
@@ -38,33 +61,53 @@ CMakeFiles/RT.dir/Material.cpp.o: \
  ../Material.h \
  ../Point.h \
  ../UVPoint.h
-CMakeFiles/RT.dir/Object.cpp.o: \
+CMakeFiles/RT.dir/Objects/AABox.cpp.o: \
  ../Color.h \
  ../Material.h \
- ../Object.cpp \
- ../Object.h \
+ ../Objects/AABox.cpp \
+ ../Objects/AABox.h \
+ ../Objects/Object.h \
  ../Point.h \
  ../Ray.h \
  ../UVPoint.h
-CMakeFiles/RT.dir/Plane.cpp.o: \
+CMakeFiles/RT.dir/Objects/Object.cpp.o: \
  ../Color.h \
  ../Material.h \
- ../Object.h \
- ../Plane.cpp \
- ../Plane.h \
+ ../Objects/Object.cpp \
+ ../Objects/Object.h \
+ ../Point.h \
+ ../Ray.h \
+ ../UVPoint.h
+CMakeFiles/RT.dir/Objects/Plane.cpp.o: \
+ ../Color.h \
+ ../Material.h \
+ ../Objects/Object.h \
+ ../Objects/Plane.cpp \
+ ../Objects/Plane.h \
+ ../Point.h \
+ ../Ray.h \
+ ../UVPoint.h
+CMakeFiles/RT.dir/Objects/Sphere.cpp.o: \
+ ../Color.h \
+ ../Material.h \
+ ../Objects/Object.h \
+ ../Objects/Sphere.cpp \
+ ../Objects/Sphere.h \
+ ../Point.h \
+ ../Ray.h \
+ ../UVPoint.h
+CMakeFiles/RT.dir/Objects/Triangle.cpp.o: \
+ ../Color.h \
+ ../Material.h \
+ ../Objects/Object.h \
+ ../Objects/Triangle.cpp \
+ ../Objects/Triangle.h \
  ../Point.h \
  ../Ray.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Point.cpp.o: \
  ../Point.cpp \
  ../Point.h \
- ../UVPoint.h
-CMakeFiles/RT.dir/PointLight.cpp.o: \
- ../Color.h \
- ../Light.h \
- ../Point.h \
- ../PointLight.cpp \
- ../PointLight.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Ray.cpp.o: \
  ../Color.h \
@@ -74,39 +117,14 @@ CMakeFiles/RT.dir/Ray.cpp.o: \
  ../UVPoint.h
 CMakeFiles/RT.dir/Scene.cpp.o: \
  ../Color.h \
- ../Light.h \
+ ../Lights/Light.h \
+ ../Lights/SunLight.h \
  ../Material.h \
- ../Object.h \
+ ../Objects/Object.h \
  ../Point.h \
  ../Ray.h \
  ../Scene.cpp \
  ../Scene.h \
- ../SunLight.h \
- ../UVPoint.h
-CMakeFiles/RT.dir/Sphere.cpp.o: \
- ../Color.h \
- ../Material.h \
- ../Object.h \
- ../Point.h \
- ../Ray.h \
- ../Sphere.cpp \
- ../Sphere.h \
- ../UVPoint.h
-CMakeFiles/RT.dir/SunLight.cpp.o: \
- ../Color.h \
- ../Light.h \
- ../Point.h \
- ../SunLight.cpp \
- ../SunLight.h \
- ../UVPoint.h
-CMakeFiles/RT.dir/Triangle.cpp.o: \
- ../Color.h \
- ../Material.h \
- ../Object.h \
- ../Point.h \
- ../Ray.h \
- ../Triangle.cpp \
- ../Triangle.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/UVPoint.cpp.o: \
  ../UVPoint.cpp \
@@ -116,16 +134,18 @@ CMakeFiles/RT.dir/raytracer.cpp.o: \
  ../Color.h \
  ../DataGrid.h \
  ../Helpers.h \
- ../Light.h \
+ ../Lights/BoxLight.h \
+ ../Lights/Light.h \
+ ../Lights/PointLight.h \
+ ../Lights/SunLight.h \
  ../Material.h \
- ../Object.h \
- ../Plane.h \
+ ../Objects/AABox.h \
+ ../Objects/Object.h \
+ ../Objects/Plane.h \
+ ../Objects/Sphere.h \
+ ../Objects/Triangle.h \
  ../Point.h \
- ../PointLight.h \
  ../Ray.h \
  ../Scene.h \
- ../Sphere.h \
- ../SunLight.h \
- ../Triangle.h \
  ../UVPoint.h \
  ../raytracer.cpp

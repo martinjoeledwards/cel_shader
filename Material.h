@@ -19,7 +19,7 @@ public:
         this->fac_amb = fac_amb;
         this->fac_refl = fac_refl;
         this->fac_tran = fac_tran;
-        this->gloss = (gloss * 2) + 1;
+        this->gloss = (gloss * 2) + 1;      // kind of a hack to keep from getting weird values in the glossiness calc. Dunno why it happens.
         this->refrac_index = ior;
     }
     Color getCol(){

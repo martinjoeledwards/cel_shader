@@ -12,6 +12,8 @@
 
 std::string get_time_string();
 
+double getRandDouble(double min_val, double max_val);
+
 class Progress{
 public:
     Progress(double y_dim){

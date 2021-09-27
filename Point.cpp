@@ -94,3 +94,21 @@ Point refract_vec(double ior, Point incident, Point normal){
     return norm(final);
 
 }
+
+Point jitter_vector(Point vector, double amount){
+    double x_amt = double(rand()) / (double(RAND_MAX) + 1.0);
+    double y_amt = double(rand()) / (double(RAND_MAX) + 1.0);
+    double z_amt = double(rand()) / (double(RAND_MAX) + 1.0);
+
+    x_amt = (x_amt * amount * 2) - amount;
+    y_amt = (y_amt * amount * 2) - amount;
+    z_amt = (z_amt * amount * 2) - amount;
+
+    vector = vector + Point(x_amt, y_amt, z_amt);
+    return norm(vector);
+}
+//
+//double getRandDouble(double min_val, double max_val) {
+//    double normalized = double(rand()) / (double(RAND_MAX) + 1.0);
+//    return ((max_val - min_val) * normalized) + min_val;
+//}

@@ -15,9 +15,9 @@ public:
         this->distance = distance;
     }
 
-    Point get_hit_point(Ray inRay) override {
-        return Point();
-    }
+//    Point get_hit_point(Ray inRay) override {
+//        return Point();
+//    }
 
     double get_dist(Ray inRay) override {
         double checker = dot(normal, inRay.getDir());

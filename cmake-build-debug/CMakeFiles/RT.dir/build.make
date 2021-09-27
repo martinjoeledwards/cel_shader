@@ -144,31 +144,31 @@ CMakeFiles/RT.dir/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Point.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.cpp -o CMakeFiles/RT.dir/Point.cpp.s
 
-CMakeFiles/RT.dir/Object.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/Object.cpp.o: ../Object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RT.dir/Object.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Object.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.cpp
+CMakeFiles/RT.dir/Objects/Object.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Objects/Object.cpp.o: ../Objects/Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RT.dir/Objects/Object.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Object.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.cpp
 
-CMakeFiles/RT.dir/Object.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Object.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.cpp > CMakeFiles/RT.dir/Object.cpp.i
+CMakeFiles/RT.dir/Objects/Object.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Object.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.cpp > CMakeFiles/RT.dir/Objects/Object.cpp.i
 
-CMakeFiles/RT.dir/Object.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Object.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.cpp -o CMakeFiles/RT.dir/Object.cpp.s
+CMakeFiles/RT.dir/Objects/Object.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Object.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.cpp -o CMakeFiles/RT.dir/Objects/Object.cpp.s
 
-CMakeFiles/RT.dir/Sphere.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/Sphere.cpp.o: ../Sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RT.dir/Sphere.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Sphere.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.cpp
+CMakeFiles/RT.dir/Objects/Sphere.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Objects/Sphere.cpp.o: ../Objects/Sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RT.dir/Objects/Sphere.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Sphere.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.cpp
 
-CMakeFiles/RT.dir/Sphere.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Sphere.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.cpp > CMakeFiles/RT.dir/Sphere.cpp.i
+CMakeFiles/RT.dir/Objects/Sphere.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Sphere.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.cpp > CMakeFiles/RT.dir/Objects/Sphere.cpp.i
 
-CMakeFiles/RT.dir/Sphere.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Sphere.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.cpp -o CMakeFiles/RT.dir/Sphere.cpp.s
+CMakeFiles/RT.dir/Objects/Sphere.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Sphere.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.cpp -o CMakeFiles/RT.dir/Objects/Sphere.cpp.s
 
 CMakeFiles/RT.dir/Camera.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Camera.cpp.o: ../Camera.cpp
@@ -209,31 +209,31 @@ CMakeFiles/RT.dir/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Scene.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.cpp -o CMakeFiles/RT.dir/Scene.cpp.s
 
-CMakeFiles/RT.dir/Plane.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/Plane.cpp.o: ../Plane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RT.dir/Plane.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Plane.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.cpp
+CMakeFiles/RT.dir/Objects/Plane.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Objects/Plane.cpp.o: ../Objects/Plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RT.dir/Objects/Plane.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Plane.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.cpp
 
-CMakeFiles/RT.dir/Plane.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Plane.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.cpp > CMakeFiles/RT.dir/Plane.cpp.i
+CMakeFiles/RT.dir/Objects/Plane.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Plane.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.cpp > CMakeFiles/RT.dir/Objects/Plane.cpp.i
 
-CMakeFiles/RT.dir/Plane.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Plane.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.cpp -o CMakeFiles/RT.dir/Plane.cpp.s
+CMakeFiles/RT.dir/Objects/Plane.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Plane.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.cpp -o CMakeFiles/RT.dir/Objects/Plane.cpp.s
 
-CMakeFiles/RT.dir/Triangle.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/Triangle.cpp.o: ../Triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RT.dir/Triangle.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Triangle.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.cpp
+CMakeFiles/RT.dir/Objects/Triangle.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Objects/Triangle.cpp.o: ../Objects/Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RT.dir/Objects/Triangle.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Triangle.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.cpp
 
-CMakeFiles/RT.dir/Triangle.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Triangle.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.cpp > CMakeFiles/RT.dir/Triangle.cpp.i
+CMakeFiles/RT.dir/Objects/Triangle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Triangle.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.cpp > CMakeFiles/RT.dir/Objects/Triangle.cpp.i
 
-CMakeFiles/RT.dir/Triangle.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Triangle.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.cpp -o CMakeFiles/RT.dir/Triangle.cpp.s
+CMakeFiles/RT.dir/Objects/Triangle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Triangle.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.cpp -o CMakeFiles/RT.dir/Objects/Triangle.cpp.s
 
 CMakeFiles/RT.dir/UVPoint.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/UVPoint.cpp.o: ../UVPoint.cpp
@@ -248,44 +248,70 @@ CMakeFiles/RT.dir/UVPoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/UVPoint.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.cpp -o CMakeFiles/RT.dir/UVPoint.cpp.s
 
-CMakeFiles/RT.dir/Light.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/Light.cpp.o: ../Light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RT.dir/Light.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Light.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.cpp
+CMakeFiles/RT.dir/Lights/Light.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Lights/Light.cpp.o: ../Lights/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RT.dir/Lights/Light.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/Light.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.cpp
 
-CMakeFiles/RT.dir/Light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Light.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.cpp > CMakeFiles/RT.dir/Light.cpp.i
+CMakeFiles/RT.dir/Lights/Light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/Light.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.cpp > CMakeFiles/RT.dir/Lights/Light.cpp.i
 
-CMakeFiles/RT.dir/Light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Light.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.cpp -o CMakeFiles/RT.dir/Light.cpp.s
+CMakeFiles/RT.dir/Lights/Light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/Light.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.cpp -o CMakeFiles/RT.dir/Lights/Light.cpp.s
 
-CMakeFiles/RT.dir/SunLight.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/SunLight.cpp.o: ../SunLight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RT.dir/SunLight.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/SunLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.cpp
+CMakeFiles/RT.dir/Lights/SunLight.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Lights/SunLight.cpp.o: ../Lights/SunLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RT.dir/Lights/SunLight.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/SunLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.cpp
 
-CMakeFiles/RT.dir/SunLight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/SunLight.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.cpp > CMakeFiles/RT.dir/SunLight.cpp.i
+CMakeFiles/RT.dir/Lights/SunLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/SunLight.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.cpp > CMakeFiles/RT.dir/Lights/SunLight.cpp.i
 
-CMakeFiles/RT.dir/SunLight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/SunLight.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.cpp -o CMakeFiles/RT.dir/SunLight.cpp.s
+CMakeFiles/RT.dir/Lights/SunLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/SunLight.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.cpp -o CMakeFiles/RT.dir/Lights/SunLight.cpp.s
 
-CMakeFiles/RT.dir/PointLight.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/PointLight.cpp.o: ../PointLight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RT.dir/PointLight.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/PointLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.cpp
+CMakeFiles/RT.dir/Lights/PointLight.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Lights/PointLight.cpp.o: ../Lights/PointLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RT.dir/Lights/PointLight.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/PointLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.cpp
 
-CMakeFiles/RT.dir/PointLight.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/PointLight.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.cpp > CMakeFiles/RT.dir/PointLight.cpp.i
+CMakeFiles/RT.dir/Lights/PointLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/PointLight.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.cpp > CMakeFiles/RT.dir/Lights/PointLight.cpp.i
 
-CMakeFiles/RT.dir/PointLight.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/PointLight.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.cpp -o CMakeFiles/RT.dir/PointLight.cpp.s
+CMakeFiles/RT.dir/Lights/PointLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/PointLight.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.cpp -o CMakeFiles/RT.dir/Lights/PointLight.cpp.s
+
+CMakeFiles/RT.dir/Objects/AABox.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Objects/AABox.cpp.o: ../Objects/AABox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RT.dir/Objects/AABox.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/AABox.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.cpp
+
+CMakeFiles/RT.dir/Objects/AABox.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/AABox.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.cpp > CMakeFiles/RT.dir/Objects/AABox.cpp.i
+
+CMakeFiles/RT.dir/Objects/AABox.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/AABox.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.cpp -o CMakeFiles/RT.dir/Objects/AABox.cpp.s
+
+CMakeFiles/RT.dir/Lights/BoxLight.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Lights/BoxLight.cpp.o: ../Lights/BoxLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RT.dir/Lights/BoxLight.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/BoxLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.cpp
+
+CMakeFiles/RT.dir/Lights/BoxLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/BoxLight.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.cpp > CMakeFiles/RT.dir/Lights/BoxLight.cpp.i
+
+CMakeFiles/RT.dir/Lights/BoxLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/BoxLight.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.cpp -o CMakeFiles/RT.dir/Lights/BoxLight.cpp.s
 
 # Object files for target RT
 RT_OBJECTS = \
@@ -295,17 +321,19 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/Helpers.cpp.o" \
 "CMakeFiles/RT.dir/Ray.cpp.o" \
 "CMakeFiles/RT.dir/Point.cpp.o" \
-"CMakeFiles/RT.dir/Object.cpp.o" \
-"CMakeFiles/RT.dir/Sphere.cpp.o" \
+"CMakeFiles/RT.dir/Objects/Object.cpp.o" \
+"CMakeFiles/RT.dir/Objects/Sphere.cpp.o" \
 "CMakeFiles/RT.dir/Camera.cpp.o" \
 "CMakeFiles/RT.dir/Material.cpp.o" \
 "CMakeFiles/RT.dir/Scene.cpp.o" \
-"CMakeFiles/RT.dir/Plane.cpp.o" \
-"CMakeFiles/RT.dir/Triangle.cpp.o" \
+"CMakeFiles/RT.dir/Objects/Plane.cpp.o" \
+"CMakeFiles/RT.dir/Objects/Triangle.cpp.o" \
 "CMakeFiles/RT.dir/UVPoint.cpp.o" \
-"CMakeFiles/RT.dir/Light.cpp.o" \
-"CMakeFiles/RT.dir/SunLight.cpp.o" \
-"CMakeFiles/RT.dir/PointLight.cpp.o"
+"CMakeFiles/RT.dir/Lights/Light.cpp.o" \
+"CMakeFiles/RT.dir/Lights/SunLight.cpp.o" \
+"CMakeFiles/RT.dir/Lights/PointLight.cpp.o" \
+"CMakeFiles/RT.dir/Objects/AABox.cpp.o" \
+"CMakeFiles/RT.dir/Lights/BoxLight.cpp.o"
 
 # External object files for target RT
 RT_EXTERNAL_OBJECTS =
@@ -316,20 +344,22 @@ RT.exe: CMakeFiles/RT.dir/DataGrid.cpp.o
 RT.exe: CMakeFiles/RT.dir/Helpers.cpp.o
 RT.exe: CMakeFiles/RT.dir/Ray.cpp.o
 RT.exe: CMakeFiles/RT.dir/Point.cpp.o
-RT.exe: CMakeFiles/RT.dir/Object.cpp.o
-RT.exe: CMakeFiles/RT.dir/Sphere.cpp.o
+RT.exe: CMakeFiles/RT.dir/Objects/Object.cpp.o
+RT.exe: CMakeFiles/RT.dir/Objects/Sphere.cpp.o
 RT.exe: CMakeFiles/RT.dir/Camera.cpp.o
 RT.exe: CMakeFiles/RT.dir/Material.cpp.o
 RT.exe: CMakeFiles/RT.dir/Scene.cpp.o
-RT.exe: CMakeFiles/RT.dir/Plane.cpp.o
-RT.exe: CMakeFiles/RT.dir/Triangle.cpp.o
+RT.exe: CMakeFiles/RT.dir/Objects/Plane.cpp.o
+RT.exe: CMakeFiles/RT.dir/Objects/Triangle.cpp.o
 RT.exe: CMakeFiles/RT.dir/UVPoint.cpp.o
-RT.exe: CMakeFiles/RT.dir/Light.cpp.o
-RT.exe: CMakeFiles/RT.dir/SunLight.cpp.o
-RT.exe: CMakeFiles/RT.dir/PointLight.cpp.o
+RT.exe: CMakeFiles/RT.dir/Lights/Light.cpp.o
+RT.exe: CMakeFiles/RT.dir/Lights/SunLight.cpp.o
+RT.exe: CMakeFiles/RT.dir/Lights/PointLight.cpp.o
+RT.exe: CMakeFiles/RT.dir/Objects/AABox.cpp.o
+RT.exe: CMakeFiles/RT.dir/Lights/BoxLight.cpp.o
 RT.exe: CMakeFiles/RT.dir/build.make
 RT.exe: CMakeFiles/RT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Linking CXX executable RT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Linking CXX executable RT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

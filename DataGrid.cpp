@@ -47,7 +47,7 @@ void DataGrid::save_image(std::string folder) {
 
     for (auto j = 0u; j < y_dim; ++j){
         for (auto i = 0u; i < x_dim; ++i){
-            Color val = image_grid[i][j];
+            Color val = image_grid[x_dim - i - 1][j];       //Note: this line here fixes the output, so it matches view correctly
             ofs << (char) val.r << (char) val.g << (char) val.b;
         }
     }

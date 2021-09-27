@@ -9,23 +9,42 @@
 
 
 struct Color {
-    Color(double r = 0.0, double g = 0.0, double b = 0.0){
+    Color(double r, double g, double b){
         this->r = r;
         this->g = g;
         this->b = b;
+    }
+
+    explicit Color(double all){
+        this->r = all;
+        this->g = all;
+        this->b = all;
+    }
+
+    Color(){
+        this->r = 0;
+        this->g = 0;
+        this->b = 0;
     }
 
     void Print(){
         std::cout << "(" << r << ", " << g << ", " << b << ")" << std::endl;
     }
 
-    Color operator* (const double& d){
+    Color operator* (const double d){     //FIXME: these aren't working for some reason
         Color col;
         col.r = this->r * d;
         col.g = this->g * d;
         col.b = this->b * d;
         return col;
     }
+
+//    Color operator* (double d){
+//        Color col(1, 1, 1);
+////        col.r = r * d;
+//
+//        return col;
+//    }
 
 
     Color clip() const{

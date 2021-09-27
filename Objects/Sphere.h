@@ -15,9 +15,9 @@ public:
 //        this->myMat = myMat;
     }
 
-    Point get_hit_point(Ray inRay) override {
-        return Point(0, 0, 0);
-    }
+//    Point get_hit_point(Ray inRay) override {
+//        return Point(0, 0, 0);
+//    }
 
     double get_dist(Ray inRay) override{
         double b = 2.0 * dot(inRay.getDir(), inRay.getOrigin() - center);

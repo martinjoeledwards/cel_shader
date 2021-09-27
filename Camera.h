@@ -5,6 +5,7 @@
 #ifndef RT_CAMERA_H
 #define RT_CAMERA_H
 #include "Point.h"
+#include "Helpers.h"
 #include <cmath>
 #include <vector>
 #include "Ray.h"
@@ -33,39 +34,44 @@ public:
         dist_x = (tan(PI * (fov / 2.0) / 180.0));
         dist_y = dist_x / aspect;
 
-        incr = (2 * dist_x) / (x_dim - 1);  //account for loops not going "all the way"
-        top_right = top_right + (U * dist_x) + (V * dist_y);
+//        incr = (2 * dist_x) / (x_dim - 1);  //account for loops not going "all the way"
+        incr = (2 * dist_x) / (x_dim );  //account for loops not going "all the way"
+        top_left = top_left + (U * dist_x) + (V * dist_y);
 
         u_step_vec = U.negate() * incr;
         v_step_vec = V.negate() * incr;
     }
 
+    void setRayJitter(bool set){ rayJitter = set; }
+    void setSampleSubdiv(int set){ sampleSubdiv = set; }
+
     Ray getRay(unsigned int i, unsigned int j){
-        Point grid_point = top_right + (u_step_vec * i) + (v_step_vec * j);
+        Point grid_point = top_left + (u_step_vec * i) + (v_step_vec * j);
         return Ray(from, grid_point - from);
     }
 
-    std::vector<Ray> getRayList(unsigned int i, unsigned int j, int sample_subdiv){
+    std::vector<Ray> getRayList(unsigned int i, unsigned int j){
         std::vector<Ray> rayList;
-//        auto i_step = (double)i;
-//        auto j_step = (double)j;
-        Point pixel_center = top_right + (u_step_vec * i) + (v_step_vec * j);
-        Point u_subdiv_step = u_step_vec / (sample_subdiv );
-        Point v_subdiv_step = v_step_vec / (sample_subdiv );
-        Point pixel_start = pixel_center + (u_subdiv_step / 2) + (v_subdiv_step / 2);
-        for(int f = 0; f < sample_subdiv; f++){
-            for(int g = 0; g < sample_subdiv; g++){
 
-                Point grid_point = pixel_start + u_subdiv_step * f + v_subdiv_step * g;
-//                Point grid_point = top_right + (u_step_vec * i) + (v_step_vec * j)
-//                        + u_subdiv_step * f + v_subdiv_step * g;
-                rayList.push_back(Ray(from, grid_point - from));
+        Point pixel_upper_left = top_left + (u_step_vec * i) + (v_step_vec * j);
+        Point u_subdiv_step = u_step_vec / sampleSubdiv;
+        Point v_subdiv_step = v_step_vec / sampleSubdiv;
+
+        for(int f = 0; f < sampleSubdiv; f++){
+            for(int g = 0; g < sampleSubdiv; g++) {
+                double x_rand = getRandDouble(0, 1);        //randomly jitters pixel samples
+                double y_rand = getRandDouble(0, 1);
+                if(!rayJitter){
+                    x_rand = .5;
+                    y_rand = .5;
+                }
+                Point gridPoint = pixel_upper_left + u_subdiv_step * (f + x_rand);
+                gridPoint = gridPoint + v_subdiv_step * (g + y_rand);
+                rayList.emplace_back(from, gridPoint - from);
             }
         }
-//        std::cout << "size of list is " << rayList.size() << std::endl;
+
         return rayList;
-//        Point grid_point = top_right + (u_step_vec * i) + (v_step_vec * j);
-//        return Ray(from, grid_point - from);
     }
 
 private:
@@ -74,6 +80,8 @@ private:
     unsigned int y_dim;
     double aspect;
     double fov;
+    bool rayJitter = true;
+    int sampleSubdiv = 1;
     Point from;
     Point at;
     Point up;
@@ -88,7 +96,7 @@ private:
     double dist_y;
     double incr;
 
-    Point top_right;
+    Point top_left;
     Point u_step_vec;
     Point v_step_vec;
 };

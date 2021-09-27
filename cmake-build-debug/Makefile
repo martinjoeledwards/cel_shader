@@ -225,29 +225,101 @@ Helpers.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Helpers.cpp.s
 .PHONY : Helpers.cpp.s
 
-Light.o: Light.cpp.o
-.PHONY : Light.o
+Lights/BoxLight.o: Lights/BoxLight.cpp.o
+.PHONY : Lights/BoxLight.o
 
 # target to build an object file
-Light.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Light.cpp.o
-.PHONY : Light.cpp.o
+Lights/BoxLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/BoxLight.cpp.o
+.PHONY : Lights/BoxLight.cpp.o
 
-Light.i: Light.cpp.i
-.PHONY : Light.i
+Lights/BoxLight.i: Lights/BoxLight.cpp.i
+.PHONY : Lights/BoxLight.i
 
 # target to preprocess a source file
-Light.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Light.cpp.i
-.PHONY : Light.cpp.i
+Lights/BoxLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/BoxLight.cpp.i
+.PHONY : Lights/BoxLight.cpp.i
 
-Light.s: Light.cpp.s
-.PHONY : Light.s
+Lights/BoxLight.s: Lights/BoxLight.cpp.s
+.PHONY : Lights/BoxLight.s
 
 # target to generate assembly for a file
-Light.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Light.cpp.s
-.PHONY : Light.cpp.s
+Lights/BoxLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/BoxLight.cpp.s
+.PHONY : Lights/BoxLight.cpp.s
+
+Lights/Light.o: Lights/Light.cpp.o
+.PHONY : Lights/Light.o
+
+# target to build an object file
+Lights/Light.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/Light.cpp.o
+.PHONY : Lights/Light.cpp.o
+
+Lights/Light.i: Lights/Light.cpp.i
+.PHONY : Lights/Light.i
+
+# target to preprocess a source file
+Lights/Light.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/Light.cpp.i
+.PHONY : Lights/Light.cpp.i
+
+Lights/Light.s: Lights/Light.cpp.s
+.PHONY : Lights/Light.s
+
+# target to generate assembly for a file
+Lights/Light.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/Light.cpp.s
+.PHONY : Lights/Light.cpp.s
+
+Lights/PointLight.o: Lights/PointLight.cpp.o
+.PHONY : Lights/PointLight.o
+
+# target to build an object file
+Lights/PointLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/PointLight.cpp.o
+.PHONY : Lights/PointLight.cpp.o
+
+Lights/PointLight.i: Lights/PointLight.cpp.i
+.PHONY : Lights/PointLight.i
+
+# target to preprocess a source file
+Lights/PointLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/PointLight.cpp.i
+.PHONY : Lights/PointLight.cpp.i
+
+Lights/PointLight.s: Lights/PointLight.cpp.s
+.PHONY : Lights/PointLight.s
+
+# target to generate assembly for a file
+Lights/PointLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/PointLight.cpp.s
+.PHONY : Lights/PointLight.cpp.s
+
+Lights/SunLight.o: Lights/SunLight.cpp.o
+.PHONY : Lights/SunLight.o
+
+# target to build an object file
+Lights/SunLight.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/SunLight.cpp.o
+.PHONY : Lights/SunLight.cpp.o
+
+Lights/SunLight.i: Lights/SunLight.cpp.i
+.PHONY : Lights/SunLight.i
+
+# target to preprocess a source file
+Lights/SunLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/SunLight.cpp.i
+.PHONY : Lights/SunLight.cpp.i
+
+Lights/SunLight.s: Lights/SunLight.cpp.s
+.PHONY : Lights/SunLight.s
+
+# target to generate assembly for a file
+Lights/SunLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Lights/SunLight.cpp.s
+.PHONY : Lights/SunLight.cpp.s
 
 Material.o: Material.cpp.o
 .PHONY : Material.o
@@ -273,53 +345,125 @@ Material.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Material.cpp.s
 .PHONY : Material.cpp.s
 
-Object.o: Object.cpp.o
-.PHONY : Object.o
+Objects/AABox.o: Objects/AABox.cpp.o
+.PHONY : Objects/AABox.o
 
 # target to build an object file
-Object.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Object.cpp.o
-.PHONY : Object.cpp.o
+Objects/AABox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/AABox.cpp.o
+.PHONY : Objects/AABox.cpp.o
 
-Object.i: Object.cpp.i
-.PHONY : Object.i
+Objects/AABox.i: Objects/AABox.cpp.i
+.PHONY : Objects/AABox.i
 
 # target to preprocess a source file
-Object.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Object.cpp.i
-.PHONY : Object.cpp.i
+Objects/AABox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/AABox.cpp.i
+.PHONY : Objects/AABox.cpp.i
 
-Object.s: Object.cpp.s
-.PHONY : Object.s
+Objects/AABox.s: Objects/AABox.cpp.s
+.PHONY : Objects/AABox.s
 
 # target to generate assembly for a file
-Object.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Object.cpp.s
-.PHONY : Object.cpp.s
+Objects/AABox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/AABox.cpp.s
+.PHONY : Objects/AABox.cpp.s
 
-Plane.o: Plane.cpp.o
-.PHONY : Plane.o
+Objects/Object.o: Objects/Object.cpp.o
+.PHONY : Objects/Object.o
 
 # target to build an object file
-Plane.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Plane.cpp.o
-.PHONY : Plane.cpp.o
+Objects/Object.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Object.cpp.o
+.PHONY : Objects/Object.cpp.o
 
-Plane.i: Plane.cpp.i
-.PHONY : Plane.i
+Objects/Object.i: Objects/Object.cpp.i
+.PHONY : Objects/Object.i
 
 # target to preprocess a source file
-Plane.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Plane.cpp.i
-.PHONY : Plane.cpp.i
+Objects/Object.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Object.cpp.i
+.PHONY : Objects/Object.cpp.i
 
-Plane.s: Plane.cpp.s
-.PHONY : Plane.s
+Objects/Object.s: Objects/Object.cpp.s
+.PHONY : Objects/Object.s
 
 # target to generate assembly for a file
-Plane.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Plane.cpp.s
-.PHONY : Plane.cpp.s
+Objects/Object.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Object.cpp.s
+.PHONY : Objects/Object.cpp.s
+
+Objects/Plane.o: Objects/Plane.cpp.o
+.PHONY : Objects/Plane.o
+
+# target to build an object file
+Objects/Plane.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Plane.cpp.o
+.PHONY : Objects/Plane.cpp.o
+
+Objects/Plane.i: Objects/Plane.cpp.i
+.PHONY : Objects/Plane.i
+
+# target to preprocess a source file
+Objects/Plane.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Plane.cpp.i
+.PHONY : Objects/Plane.cpp.i
+
+Objects/Plane.s: Objects/Plane.cpp.s
+.PHONY : Objects/Plane.s
+
+# target to generate assembly for a file
+Objects/Plane.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Plane.cpp.s
+.PHONY : Objects/Plane.cpp.s
+
+Objects/Sphere.o: Objects/Sphere.cpp.o
+.PHONY : Objects/Sphere.o
+
+# target to build an object file
+Objects/Sphere.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Sphere.cpp.o
+.PHONY : Objects/Sphere.cpp.o
+
+Objects/Sphere.i: Objects/Sphere.cpp.i
+.PHONY : Objects/Sphere.i
+
+# target to preprocess a source file
+Objects/Sphere.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Sphere.cpp.i
+.PHONY : Objects/Sphere.cpp.i
+
+Objects/Sphere.s: Objects/Sphere.cpp.s
+.PHONY : Objects/Sphere.s
+
+# target to generate assembly for a file
+Objects/Sphere.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Sphere.cpp.s
+.PHONY : Objects/Sphere.cpp.s
+
+Objects/Triangle.o: Objects/Triangle.cpp.o
+.PHONY : Objects/Triangle.o
+
+# target to build an object file
+Objects/Triangle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Triangle.cpp.o
+.PHONY : Objects/Triangle.cpp.o
+
+Objects/Triangle.i: Objects/Triangle.cpp.i
+.PHONY : Objects/Triangle.i
+
+# target to preprocess a source file
+Objects/Triangle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Triangle.cpp.i
+.PHONY : Objects/Triangle.cpp.i
+
+Objects/Triangle.s: Objects/Triangle.cpp.s
+.PHONY : Objects/Triangle.s
+
+# target to generate assembly for a file
+Objects/Triangle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Objects/Triangle.cpp.s
+.PHONY : Objects/Triangle.cpp.s
 
 Point.o: Point.cpp.o
 .PHONY : Point.o
@@ -344,30 +488,6 @@ Point.s: Point.cpp.s
 Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Point.cpp.s
 .PHONY : Point.cpp.s
-
-PointLight.o: PointLight.cpp.o
-.PHONY : PointLight.o
-
-# target to build an object file
-PointLight.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/PointLight.cpp.o
-.PHONY : PointLight.cpp.o
-
-PointLight.i: PointLight.cpp.i
-.PHONY : PointLight.i
-
-# target to preprocess a source file
-PointLight.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/PointLight.cpp.i
-.PHONY : PointLight.cpp.i
-
-PointLight.s: PointLight.cpp.s
-.PHONY : PointLight.s
-
-# target to generate assembly for a file
-PointLight.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/PointLight.cpp.s
-.PHONY : PointLight.cpp.s
 
 Ray.o: Ray.cpp.o
 .PHONY : Ray.o
@@ -416,78 +536,6 @@ Scene.s: Scene.cpp.s
 Scene.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Scene.cpp.s
 .PHONY : Scene.cpp.s
-
-Sphere.o: Sphere.cpp.o
-.PHONY : Sphere.o
-
-# target to build an object file
-Sphere.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Sphere.cpp.o
-.PHONY : Sphere.cpp.o
-
-Sphere.i: Sphere.cpp.i
-.PHONY : Sphere.i
-
-# target to preprocess a source file
-Sphere.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Sphere.cpp.i
-.PHONY : Sphere.cpp.i
-
-Sphere.s: Sphere.cpp.s
-.PHONY : Sphere.s
-
-# target to generate assembly for a file
-Sphere.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Sphere.cpp.s
-.PHONY : Sphere.cpp.s
-
-SunLight.o: SunLight.cpp.o
-.PHONY : SunLight.o
-
-# target to build an object file
-SunLight.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/SunLight.cpp.o
-.PHONY : SunLight.cpp.o
-
-SunLight.i: SunLight.cpp.i
-.PHONY : SunLight.i
-
-# target to preprocess a source file
-SunLight.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/SunLight.cpp.i
-.PHONY : SunLight.cpp.i
-
-SunLight.s: SunLight.cpp.s
-.PHONY : SunLight.s
-
-# target to generate assembly for a file
-SunLight.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/SunLight.cpp.s
-.PHONY : SunLight.cpp.s
-
-Triangle.o: Triangle.cpp.o
-.PHONY : Triangle.o
-
-# target to build an object file
-Triangle.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Triangle.cpp.o
-.PHONY : Triangle.cpp.o
-
-Triangle.i: Triangle.cpp.i
-.PHONY : Triangle.i
-
-# target to preprocess a source file
-Triangle.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Triangle.cpp.i
-.PHONY : Triangle.cpp.i
-
-Triangle.s: Triangle.cpp.s
-.PHONY : Triangle.s
-
-# target to generate assembly for a file
-Triangle.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Triangle.cpp.s
-.PHONY : Triangle.cpp.s
 
 UVPoint.o: UVPoint.cpp.o
 .PHONY : UVPoint.o
@@ -558,39 +606,45 @@ help:
 	@echo "... Helpers.o"
 	@echo "... Helpers.i"
 	@echo "... Helpers.s"
-	@echo "... Light.o"
-	@echo "... Light.i"
-	@echo "... Light.s"
+	@echo "... Lights/BoxLight.o"
+	@echo "... Lights/BoxLight.i"
+	@echo "... Lights/BoxLight.s"
+	@echo "... Lights/Light.o"
+	@echo "... Lights/Light.i"
+	@echo "... Lights/Light.s"
+	@echo "... Lights/PointLight.o"
+	@echo "... Lights/PointLight.i"
+	@echo "... Lights/PointLight.s"
+	@echo "... Lights/SunLight.o"
+	@echo "... Lights/SunLight.i"
+	@echo "... Lights/SunLight.s"
 	@echo "... Material.o"
 	@echo "... Material.i"
 	@echo "... Material.s"
-	@echo "... Object.o"
-	@echo "... Object.i"
-	@echo "... Object.s"
-	@echo "... Plane.o"
-	@echo "... Plane.i"
-	@echo "... Plane.s"
+	@echo "... Objects/AABox.o"
+	@echo "... Objects/AABox.i"
+	@echo "... Objects/AABox.s"
+	@echo "... Objects/Object.o"
+	@echo "... Objects/Object.i"
+	@echo "... Objects/Object.s"
+	@echo "... Objects/Plane.o"
+	@echo "... Objects/Plane.i"
+	@echo "... Objects/Plane.s"
+	@echo "... Objects/Sphere.o"
+	@echo "... Objects/Sphere.i"
+	@echo "... Objects/Sphere.s"
+	@echo "... Objects/Triangle.o"
+	@echo "... Objects/Triangle.i"
+	@echo "... Objects/Triangle.s"
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
-	@echo "... PointLight.o"
-	@echo "... PointLight.i"
-	@echo "... PointLight.s"
 	@echo "... Ray.o"
 	@echo "... Ray.i"
 	@echo "... Ray.s"
 	@echo "... Scene.o"
 	@echo "... Scene.i"
 	@echo "... Scene.s"
-	@echo "... Sphere.o"
-	@echo "... Sphere.i"
-	@echo "... Sphere.s"
-	@echo "... SunLight.o"
-	@echo "... SunLight.i"
-	@echo "... SunLight.s"
-	@echo "... Triangle.o"
-	@echo "... Triangle.i"
-	@echo "... Triangle.s"
 	@echo "... UVPoint.o"
 	@echo "... UVPoint.i"
 	@echo "... UVPoint.s"

@@ -104,10 +104,28 @@
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.h">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.cpp">
@@ -116,28 +134,40 @@
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.h">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.cpp">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.cpp">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.h">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.cpp">
@@ -150,24 +180,6 @@
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.cpp">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.h">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.cpp">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.h">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.cpp">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.h">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.cpp">

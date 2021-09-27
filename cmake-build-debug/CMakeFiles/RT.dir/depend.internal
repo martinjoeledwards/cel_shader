@@ -5,6 +5,7 @@ CMakeFiles/RT.dir/Camera.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.cpp
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
@@ -26,10 +27,32 @@ CMakeFiles/RT.dir/Helpers.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
-CMakeFiles/RT.dir/Light.cpp.o
+CMakeFiles/RT.dir/Lights/BoxLight.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.cpp
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+CMakeFiles/RT.dir/Lights/Light.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+CMakeFiles/RT.dir/Lights/PointLight.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+CMakeFiles/RT.dir/Lights/SunLight.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
 CMakeFiles/RT.dir/Material.cpp.o
@@ -38,33 +61,53 @@ CMakeFiles/RT.dir/Material.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
-CMakeFiles/RT.dir/Object.cpp.o
+CMakeFiles/RT.dir/Objects/AABox.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.cpp
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
-CMakeFiles/RT.dir/Plane.cpp.o
+CMakeFiles/RT.dir/Objects/Object.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.cpp
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+CMakeFiles/RT.dir/Objects/Plane.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+CMakeFiles/RT.dir/Objects/Sphere.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+CMakeFiles/RT.dir/Objects/Triangle.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
 CMakeFiles/RT.dir/Point.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.cpp
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
-CMakeFiles/RT.dir/PointLight.cpp.o
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.cpp
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
 CMakeFiles/RT.dir/Ray.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
@@ -74,39 +117,14 @@ CMakeFiles/RT.dir/Ray.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
 CMakeFiles/RT.dir/Scene.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.cpp
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
-CMakeFiles/RT.dir/Sphere.cpp.o
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.cpp
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
-CMakeFiles/RT.dir/SunLight.cpp.o
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.cpp
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
-CMakeFiles/RT.dir/Triangle.cpp.o
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.cpp
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
 CMakeFiles/RT.dir/UVPoint.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.cpp
@@ -116,16 +134,18 @@ CMakeFiles/RT.dir/raytracer.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Object.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Plane.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/PointLight.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Sphere.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/SunLight.h
- /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Triangle.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/raytracer.cpp

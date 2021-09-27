@@ -22,6 +22,9 @@ public:
         return 99999;
     }
 
+    std::pair<Point, double> getLightHit(Point from) override{
+        return {light_direction,99999};
+    }
 private:
     Point light_direction;
 

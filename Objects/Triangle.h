@@ -28,9 +28,9 @@ public:
 //        self.vec1 = self.p2 - self.p0
     };
 
-    Point get_hit_point(Ray inRay) override {
-        return Point();
-    }
+//    Point get_hit_point(Ray inRay) override {
+//        return Point();
+//    }
 
     bool point_in_tri(Point point) {
         Point posNorm = absVal(normal);
