@@ -11,7 +11,7 @@
 class Material {
 public:
     explicit Material(Color diffuse, Color specular, double fac_diff, double fac_spec, double fac_amb, double fac_refl,
-                      int gloss, double fac_tran, double ior) {
+                      double fac_tran, double jit_refl, double jit_tran, int gloss, double ior) {
         this->diffuse = diffuse;
         this->specular = specular;
         this->fac_diff = fac_diff;
@@ -21,6 +21,8 @@ public:
         this->fac_tran = fac_tran;
         this->gloss = (gloss * 2) + 1;      // kind of a hack to keep from getting weird values in the glossiness calc. Dunno why it happens.
         this->refrac_index = ior;
+        this->refl_jit = jit_refl;
+        this->tran_jit = jit_tran;
     }
     Color getCol(){
         return diffuse;
@@ -54,6 +56,13 @@ public:
         return refrac_index;
     }
 
+    double getReflJit() {
+        return refl_jit;
+    }
+    double getTranJit() {
+        return tran_jit;
+    }
+
 private:
     Color diffuse;
     Color specular;
@@ -64,6 +73,8 @@ private:
     double fac_tran;
     double refrac_index;
     int gloss;
+    double refl_jit;
+    double tran_jit;
 };
 
 

@@ -57,10 +57,10 @@ RM = /cygdrive/c/Users/marti/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,54 @@ RT: cmake_check_build_system
 RT/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/build
 .PHONY : RT/fast
+
+Bounding/BoundingBox.o: Bounding/BoundingBox.cpp.o
+.PHONY : Bounding/BoundingBox.o
+
+# target to build an object file
+Bounding/BoundingBox.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o
+.PHONY : Bounding/BoundingBox.cpp.o
+
+Bounding/BoundingBox.i: Bounding/BoundingBox.cpp.i
+.PHONY : Bounding/BoundingBox.i
+
+# target to preprocess a source file
+Bounding/BoundingBox.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.i
+.PHONY : Bounding/BoundingBox.cpp.i
+
+Bounding/BoundingBox.s: Bounding/BoundingBox.cpp.s
+.PHONY : Bounding/BoundingBox.s
+
+# target to generate assembly for a file
+Bounding/BoundingBox.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.s
+.PHONY : Bounding/BoundingBox.cpp.s
+
+Bounding/Node.o: Bounding/Node.cpp.o
+.PHONY : Bounding/Node.o
+
+# target to build an object file
+Bounding/Node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Bounding/Node.cpp.o
+.PHONY : Bounding/Node.cpp.o
+
+Bounding/Node.i: Bounding/Node.cpp.i
+.PHONY : Bounding/Node.i
+
+# target to preprocess a source file
+Bounding/Node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Bounding/Node.cpp.i
+.PHONY : Bounding/Node.cpp.i
+
+Bounding/Node.s: Bounding/Node.cpp.s
+.PHONY : Bounding/Node.s
+
+# target to generate assembly for a file
+Bounding/Node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Bounding/Node.cpp.s
+.PHONY : Bounding/Node.cpp.s
 
 Camera.o: Camera.cpp.o
 .PHONY : Camera.o
@@ -618,6 +666,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... RT"
+	@echo "... Bounding/BoundingBox.o"
+	@echo "... Bounding/BoundingBox.i"
+	@echo "... Bounding/BoundingBox.s"
+	@echo "... Bounding/Node.o"
+	@echo "... Bounding/Node.i"
+	@echo "... Bounding/Node.s"
 	@echo "... Camera.o"
 	@echo "... Camera.i"
 	@echo "... Camera.s"

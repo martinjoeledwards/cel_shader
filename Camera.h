@@ -74,6 +74,13 @@ public:
         return rayList;
     }
 
+    unsigned int get_x_dim(){
+        return x_dim;
+    }
+    unsigned int get_y_dim(){
+        return y_dim;
+    }
+
 private:
     double PI = 3.1415926;
     unsigned int x_dim;

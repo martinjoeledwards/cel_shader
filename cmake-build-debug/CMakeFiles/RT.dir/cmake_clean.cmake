@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o"
+  "CMakeFiles/RT.dir/Bounding/Node.cpp.o"
   "CMakeFiles/RT.dir/Camera.cpp.o"
   "CMakeFiles/RT.dir/Color.cpp.o"
   "CMakeFiles/RT.dir/DataGrid.cpp.o"

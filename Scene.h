@@ -154,7 +154,7 @@ public:
 //        reflection
         if(iters > 0 && currMat.getReflFac() > 0.01){   //if surface is reflective and reflections aren't maxed out
             Point reflected_vec = reflect_vector(inRay.getDir(), surf_norm);
-            reflected_vec = jitter_vector(reflected_vec,jitter_amount);
+            reflected_vec = jitter_vector(reflected_vec,currMat.getReflJit());
             Ray reflected_ray(hit_point + (reflected_vec * shift_amount), reflected_vec);
 
             Color reflected_color = GetPixelColor(reflected_ray, iters - 1);
@@ -169,7 +169,7 @@ public:
         if(currMat.getTranFac() > 0.01){
             //recursively calculate reflectance color
             Point refracted_vec = refract_vec(currMat.getIOR(), inRay.getDir(), surf_norm);
-            refracted_vec = jitter_vector(refracted_vec, jitter_amount);
+            refracted_vec = jitter_vector(refracted_vec, currMat.getTranJit());
             Ray refracted_ray(hit_point + (refracted_vec * shift_amount), refracted_vec);
             Color refracted_color = GetPixelColor(refracted_ray, iters);        //FIXME infinite recursion?
             if (refracted_color == miss) {

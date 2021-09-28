@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RT">
-				<Option output="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/RT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/RT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -42,15 +42,15 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="RT/fast">
-				<Option output="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/RT.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option output="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/RT.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -63,141 +63,156 @@
 					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.4.0/../../../../lib/../include/w32api"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 RT/fast"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug"/>
+				<Option working_dir="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make.exe -j12 -f &quot;/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/Node.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/Node.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/DataGrid.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/DataGrid.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/BoxLight.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/BoxLight.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/PointLight.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/PointLight.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/SunLight.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/SunLight.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/AABox.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/AABox.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Random.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Triangle.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Random.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Triangle.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Random.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Random.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/raytracer.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Scene.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/CMakeLists.txt">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Scene.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/SceneMaker.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/UVPoint.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/UVPoint.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/raytracer.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

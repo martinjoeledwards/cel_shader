@@ -1,4 +1,4 @@
-# Install script for directory: /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT
+# Install script for directory: /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

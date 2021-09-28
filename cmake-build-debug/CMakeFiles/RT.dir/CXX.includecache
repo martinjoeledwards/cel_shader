@@ -6,29 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.h
 Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 Helpers.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.h
 cmath
 -
 vector
 -
 Ray.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 string
 -
 Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/DataGrid.h
 Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.h
 string
 -
 cmath
@@ -36,67 +36,67 @@ cmath
 chrono
 -
 Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/BoxLight.h
 Light.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.h
 ../Helpers.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.h
 ../Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 ../Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/PointLight.h
 ../Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 ../Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 Light.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/SunLight.h
 Light.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.h
 Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/AABox.h
 Object.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
 ../Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 ../Ray.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.h
 ../Material.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.h
 Object.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.h
 Object.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
 cmath
 -
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Triangle.h
 cmath
 -
 Object.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 string
 -
 iostream
@@ -104,37 +104,39 @@ iostream
 math.h
 -
 UVPoint.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/UVPoint.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.h
 Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Scene.h
 vector
 -
 Objects/Object.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
 Lights/SunLight.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/SunLight.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/SunLight.h
 Lights/Light.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/Light.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.h
 Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 cmath
 -
 cstdarg
 -
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/SceneMaker.h
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/UVPoint.h
 iostream
 -
 
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/raytracer.cpp
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/raytracer.cpp
 iostream
 -
 vector
@@ -142,35 +144,37 @@ vector
 thread
 -
 Color.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 DataGrid.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/DataGrid.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/DataGrid.h
 Helpers.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.h
 Point.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
 Ray.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.h
 Objects/Object.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
 Objects/Sphere.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.h
 Camera.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Camera.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.h
 Material.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Material.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.h
 Scene.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Scene.h
 Objects/Plane.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Plane.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.h
 Objects/Triangle.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Triangle.h
 Lights/PointLight.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/PointLight.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/PointLight.h
 Objects/AABox.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/AABox.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/AABox.h
 Lights/BoxLight.h
-/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Lights/BoxLight.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/BoxLight.h
+SceneMaker.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/SceneMaker.h
 random
 -
 
