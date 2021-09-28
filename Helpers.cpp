@@ -24,13 +24,7 @@ std::string get_time_string(){
     return month + "_" + day + "_" + hour + "-" + min + "-" + sec;
 }
 
-//int intRand(const int & min, const int & max) {
-//    static thread_local std::mt19937 generator;
-//    std::uniform_int_distribution<int> distribution(min,max);
-//    return distribution(generator);
-//}
-
-int intRand2(const int & min, const int & max) {
+int intRand(const int & min, const int & max) {
 
 
     static thread_local std::mt19937* generator = nullptr;
@@ -43,6 +37,6 @@ int intRand2(const int & min, const int & max) {
 
 double getRandDouble(double min_val, double max_val) {
 
-    double normalized = double(intRand2(0, 99999)) / (double(99999) + 1.0);
+    double normalized = double(intRand(0, 99999)) / (double(99999) + 1.0);
     return ((max_val - min_val) * normalized) + min_val;
 }
