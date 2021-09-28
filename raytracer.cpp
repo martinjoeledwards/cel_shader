@@ -53,7 +53,7 @@ int main() {
 
     int sampleSubdiv = 1;
     int num_bounces = 2;
-    int shadowSamples = 8;
+    int shadowSamples = 4;
     bool rayJitter = true;
 
     auto x_dim = 320u;       //default 320
