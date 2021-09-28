@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT.dir/Objects/Sphere.cpp.o"
   "CMakeFiles/RT.dir/Objects/Triangle.cpp.o"
   "CMakeFiles/RT.dir/Point.cpp.o"
+  "CMakeFiles/RT.dir/Random.cpp.o"
   "CMakeFiles/RT.dir/Ray.cpp.o"
   "CMakeFiles/RT.dir/Scene.cpp.o"
   "CMakeFiles/RT.dir/UVPoint.cpp.o"

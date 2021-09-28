@@ -36,6 +36,8 @@ public:
         std::cout << "progress = 100%" << std::endl;
         printf("\nTime elapsed: %.3f seconds.\n", elapsed.count() * 1e-9);
     }
+
+//    int intRand(const int & min, const int & max);
 private:
     int percent_complete;
     double y_dim;

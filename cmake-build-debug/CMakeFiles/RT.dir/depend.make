@@ -106,9 +106,14 @@ CMakeFiles/RT.dir/Objects/Triangle.cpp.o: \
  ../Ray.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Point.cpp.o: \
+ ../Color.h \
+ ../Helpers.h \
  ../Point.cpp \
  ../Point.h \
  ../UVPoint.h
+CMakeFiles/RT.dir/Random.cpp.o: \
+ ../Random.cpp \
+ ../Random.h
 CMakeFiles/RT.dir/Ray.cpp.o: \
  ../Color.h \
  ../Point.h \

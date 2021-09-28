@@ -3,6 +3,7 @@
 //
 
 #include "Point.h"
+#include "Helpers.h"
 #include <cmath>
 
 std::ostream& operator<<(std::ostream& os, const Point& p){
@@ -103,6 +104,10 @@ Point jitter_vector(Point vector, double amount){
     x_amt = (x_amt * amount * 2) - amount;
     y_amt = (y_amt * amount * 2) - amount;
     z_amt = (z_amt * amount * 2) - amount;
+
+    x_amt = getRandDouble(-amount, amount);
+    y_amt = getRandDouble(-amount, amount);
+    z_amt = getRandDouble(-amount, amount);
 
     vector = vector + Point(x_amt, y_amt, z_amt);
     return norm(vector);

@@ -489,6 +489,30 @@ Point.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Point.cpp.s
 .PHONY : Point.cpp.s
 
+Random.o: Random.cpp.o
+.PHONY : Random.o
+
+# target to build an object file
+Random.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Random.cpp.o
+.PHONY : Random.cpp.o
+
+Random.i: Random.cpp.i
+.PHONY : Random.i
+
+# target to preprocess a source file
+Random.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Random.cpp.i
+.PHONY : Random.cpp.i
+
+Random.s: Random.cpp.s
+.PHONY : Random.s
+
+# target to generate assembly for a file
+Random.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Random.cpp.s
+.PHONY : Random.cpp.s
+
 Ray.o: Ray.cpp.o
 .PHONY : Ray.o
 
@@ -639,6 +663,9 @@ help:
 	@echo "... Point.o"
 	@echo "... Point.i"
 	@echo "... Point.s"
+	@echo "... Random.o"
+	@echo "... Random.i"
+	@echo "... Random.s"
 	@echo "... Ray.o"
 	@echo "... Ray.i"
 	@echo "... Ray.s"

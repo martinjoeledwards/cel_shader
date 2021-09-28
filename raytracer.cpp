@@ -33,7 +33,7 @@
 #include "Objects/AABox.h"
 #include "Lights/BoxLight.h"
 #include <random>
-bool rowThreading = false;
+bool rowThreading = true;
 const int num_threads = (int) std::thread::hardware_concurrency() - 1;
 
 void renderRow(Camera myCamera, Scene myScene, DataGrid myGrid, int j, int x_dim){
@@ -45,7 +45,7 @@ void renderRow(Camera myCamera, Scene myScene, DataGrid myGrid, int j, int x_dim
 
 
 int main() {
-    srand(time(NULL));
+//    srand(time(NULL));
     //Welcome statement
     std::cout << "Welcome to Martin's fabulous Ray tracer!" << std::endl;
 
@@ -53,7 +53,7 @@ int main() {
 
     int sampleSubdiv = 1;
     int num_bounces = 2;
-    int shadowSamples = 2;
+    int shadowSamples = 8;
     bool rayJitter = true;
 
     auto x_dim = 320u;       //default 320

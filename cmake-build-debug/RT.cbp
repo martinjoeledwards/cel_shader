@@ -170,6 +170,12 @@
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h">
 			<Option target="RT"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Random.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Random.h">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.cpp">
 			<Option target="RT"/>
 		</Unit>

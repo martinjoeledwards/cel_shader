@@ -23,6 +23,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Sphere.cpp" "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles/RT.dir/Objects/Sphere.cpp.o"
   "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Objects/Triangle.cpp" "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles/RT.dir/Objects/Triangle.cpp.o"
   "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.cpp" "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles/RT.dir/Point.cpp.o"
+  "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Random.cpp" "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles/RT.dir/Random.cpp.o"
   "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.cpp" "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles/RT.dir/Ray.cpp.o"
   "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Scene.cpp" "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles/RT.dir/Scene.cpp.o"
   "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.cpp" "/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/cmake-build-debug/CMakeFiles/RT.dir/UVPoint.cpp.o"

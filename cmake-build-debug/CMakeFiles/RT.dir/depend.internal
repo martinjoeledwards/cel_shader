@@ -106,9 +106,14 @@ CMakeFiles/RT.dir/Objects/Triangle.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Ray.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
 CMakeFiles/RT.dir/Point.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Helpers.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.cpp
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/UVPoint.h
+CMakeFiles/RT.dir/Random.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Random.cpp
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Random.h
 CMakeFiles/RT.dir/Ray.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Color.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/RT/Point.h
