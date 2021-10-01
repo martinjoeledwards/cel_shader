@@ -45,11 +45,7 @@ public:
     Color getDiff(double dot, Color light, double u, double v){
             int u_coord = floor(u * (double)u_dim);
             int v_coord = floor(v * (double)v_dim);
-            Color colVal = ppmImage[u_coord][v_coord];
-//            std::cout << "col coord is " << u_coord << ", " << v_coord << std::endl;
-//            std::cout << std::endl << "color val is ";
-//            colVal.Print();
-//            std::cout << std::endl;
+            Color colVal = ppmImage[v_coord][u_coord];
             return colVal * light * dot * fac_diff;
     }
 
@@ -79,7 +75,7 @@ public:
     bool hasTex(){
         return usesTex;
     }
-    void setTexture(const char* filename){      //TODO: read file into some kind of data structure
+    void setTexture(const char* filename){
         usesTex = true;
         texture_filename = filename;
         std::string title;
@@ -92,15 +88,6 @@ public:
         std::cout << "filename is " << filename << "\n";
         std::ifstream ifs (texture_filename);
         if(ifs.is_open()){
-//            while(ifs >> title){
-//                std::cout << title << "\n";
-//            }
-//            getline(ifs, title);
-//            getline(ifs, u_dim_string);
-//            getline(ifs, v_dim_string);
-//            ifs >> u_dim_string;
-//            ifs >> v_dim_string;
-//            getline(ifs, max_col_string);
             ifs >> title;
             ifs >> u_dim_string;
             ifs >> v_dim_string;
@@ -113,19 +100,14 @@ public:
             std::cout << "ints are " << u_dim << ", " << v_dim << std::endl;
             std::cout << "max col val is " << max_col_val << std::endl;
 
-            ppmImage = new Color *[u_dim];          //set up image double array
-            for (int i = 0; i < u_dim; i++) {
-                ppmImage[i] = new Color[v_dim];
+            ppmImage = new Color *[v_dim];          //set up image double array
+            for (int i = 0; i < v_dim; i++) {
+                ppmImage[i] = new Color[u_dim];
             }
-//            std::cout << "got here " << max_col_val << std::endl;
 
             int ct = 0;
             for(int i = 0; i < v_dim; i++){
                 for(int j = 0; j < u_dim; j++){
-                    ct++;
-//                    getline(ifs, curr);
-//                    getline(ifs, curr2);
-//                    getline(ifs, curr3);
                         ifs >> curr;
                         ifs >> curr2;
                         ifs >> curr3;
@@ -133,24 +115,10 @@ public:
                     double g = (double)stoi(curr2) / (double)max_col_val;
                     double b = (double)stoi(curr3) / (double)max_col_val;
 
-//                    double r = (double)stoi(curr);
-//                    double g = (double)stoi(curr2);
-//                    double b = (double)stoi(curr3);
                     Color test = Color(r, g, b);
-//                    std::cout << "curr color is " << std::endl;
-//                    test.Print();
                     ppmImage[i][j] = test;
-//                    if(rand() / RAND_MAX < .001){
-//                        diffuse = test;
-//                    }
-//                    exit(1);
                 }
             }
-            std::cout << "pixels: " << ct << std::endl;
-//            std::cout << "diffuse val is ";
-//            diffuse.Print();
-
-
             ifs.close();
         } else {
             std::cout << "file didn't open.\n";

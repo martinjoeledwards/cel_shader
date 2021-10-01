@@ -13,10 +13,10 @@ public:
 
         double aspect_ratio = 16.0 / 9.0;
 
-        int sampleSubdiv = 2;
+        int sampleSubdiv = 6;
         bool rayJitter = true;
 
-        auto x_dim = 320u;       //default 320
+        auto x_dim = 1000u;       //default 320
         auto y_dim = x_dim / aspect_ratio; //240p
         double fov = 140.0;
 
@@ -94,7 +94,6 @@ public:
         return myScene;
     }
 
-
     Scene* scene2(){
         int num_bounces = 4;        //TODO: move these two to the camera class? And give scene a camera member?
         int shadowSamples = 32;
@@ -152,29 +151,18 @@ public:
     }
 
     Scene* scene3(){
-        int num_bounces = 2;        //TODO: move these two to the camera class? And give scene a camera member?
-        int shadowSamples = 2;
+        int num_bounces = 3;        //TODO: move these two to the camera class? And give scene a camera member?
+        int shadowSamples = 16;
 
 
 //    create objects
         earth->setTexture("Textures/jupiter.ppm");
 
         auto* refrSphere = new Sphere(earth, Point(0, .2, 0), 1);
-        auto* refrSphereR = new Sphere(refractive_rough, Point(.51, 0.3, -0.6), .4);
-        auto* blueSphere = new Sphere(reflect_smooth, Point(-.5, 0, .6), .3);
-        auto* reflSphereRough = new Sphere(reflect_rough, Point(0, 0, .6), .2);
-        auto* greenSphere = new Sphere(green_mat, Point(.6, 0, 0), .3);
-
-        auto* blueBox = new AABox(blue_mat, Point(.2, .2, .2), Point(0, 0, 0));
-        auto* redBox = new AABox(red_mat, Point(0, 0, -.1), Point(.2,.2, -.03));
-        auto* redBoxLong = new AABox(red_mat, Point(-2, 0.1, -1), Point(2,.2, -.9));
 
         Point p0(100, -.4, -100);
         Point p1(-100, -.4, -100);
         Point p2(0, -.4, 100);
-        auto* triangle = new Triangle(green_mat, p0, p2, p1);
-
-        auto* reflect_plane = new Plane(reflect_smooth, Point(1, 1, .3), -.4);
         auto* diff_plane = new Plane(reflect_rough, Point(0, 1, 0), -.8);
 
 //    create lights
