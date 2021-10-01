@@ -9,6 +9,7 @@
 //#include "../Objects/Object.h"
 
 //#include "../Point.h"
+#include <vector>
 #include "../Ray.h"
 
 class BoundingBox {
@@ -61,6 +62,19 @@ public:
                && (point.z < z_max);
     }
 
+    bool boxesIntersect(BoundingBox box){
+        if (!inside(this->x_min, this->x_max, box.x_min) && !inside(this->x_min, this->x_max, box.x_max)){
+            return false;
+        }
+        if (!inside(this->y_min, this->y_max, box.y_min) && !inside(this->y_min, this->y_max, box.y_max)){
+            return false;
+        }
+        if (!inside(this->z_min, this->z_max, box.z_min) && !inside(this->z_min, this->z_max, box.z_max)){
+            return false;
+        }
+        return true;
+    }
+
     bool rayHit(Ray inRay){
 
         double x_min_t = (x_min - inRay.getOrigin().x) / inRay.getDir().x ;
@@ -107,6 +121,13 @@ private:
         if(a > b) return a;
         return b;
     }
+
+    bool inside(double min, double max, double check){
+        return (check <= max && check >= min);
+    }
+//    std::vector<Point> getPoints(){
+//        std::vector
+//    }
 
 };
 

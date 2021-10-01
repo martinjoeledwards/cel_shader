@@ -13,6 +13,8 @@ public:
     Plane(Material *inMat, Point normal, double distance) : Object(inMat){
         this->normal = norm(normal);
         this->distance = distance;
+        this->bbox = BoundingBox(getBounds().first, getBounds().second);
+
     }
 
 //    Point get_hit_point(Ray inRay) override {
@@ -41,6 +43,10 @@ public:
         } else {
             return normal * -1;
         }
+    }
+
+    std::pair<Point, Point> getBounds() override {      //Note: bounds of a plane are infinite. Tree should account for this.
+        return {Point(0, 0, 0), Point(0, 0, 0)};
     }
 
 private:

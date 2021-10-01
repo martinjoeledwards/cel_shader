@@ -7,6 +7,7 @@
 #include "../Point.h"
 #include "../Ray.h"
 #include "../Material.h"
+#include "../Bounding/BoundingBox.h"
 
 // Base class for all renderable objects.
 //FIXME: later, potentially give default material, then attach real mat later?
@@ -22,8 +23,17 @@ public:
     virtual Color calc_col(){       //calculate color...used?
         return myMat->getCol();
     }
+    virtual std::pair<Point, Point> getBounds() = 0;
+
+    virtual std::pair<double, double> getUV(Point point){
+        return {.5, .5};
+    }
     virtual Point getSurfNorm(Point hit, Ray inRay) = 0;
+    BoundingBox getBB(){
+        return bbox;
+    }
     Material* myMat;
+    BoundingBox bbox;
 protected:
 
 };

@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.h
+vector
+-
+../Ray.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.h
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/Node.h
+vector
+-
+BoundingBox.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.h
+../Objects/Object.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
+
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.h
 Point.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
@@ -65,6 +79,10 @@ Light.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.h
 
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.h
+fstream
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/fstream
+iostream
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/iostream
 Color.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 
@@ -79,10 +97,16 @@ Object.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.h
 ../Material.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.h
+../Bounding/BoundingBox.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.h
 
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.h
 Object.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.h
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.cpp
+Sphere.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.h
 
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.h
 Object.h
@@ -125,6 +149,8 @@ Color.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.h
 Point.h
 /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.h
+Bounding/Node.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/Node.h
 cmath
 -
 cstdarg

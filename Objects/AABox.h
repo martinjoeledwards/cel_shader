@@ -22,6 +22,9 @@ public:
         if(x_min > x_max) std::swap(x_min, x_max);
         if(y_min > y_max) std::swap(y_min, y_max);
         if(z_min > z_max) std::swap(z_min, z_max);
+
+        this->bbox = BoundingBox(getBounds().first, getBounds().second);
+
     }
 
     double get_dist(Ray inRay) override {   //FIXME: returns rays from behind the camera if inside the box
@@ -64,6 +67,10 @@ public:
         if(isClose(hit.y, y_max)) return {0, 1, 0};
         if(isClose(hit.z, z_min)) return {0, 0, -1};
         if(isClose(hit.z, z_max)) return {0, 0, 1};
+    }
+
+    std::pair<Point, Point> getBounds() override {
+        return {Point(x_min, y_min, z_min), Point(x_max, y_max, z_max)};
     }
 
 private:

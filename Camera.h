@@ -34,7 +34,7 @@ public:
         dist_x = (tan(PI * (fov / 2.0) / 180.0));
         dist_y = dist_x / aspect;
 
-//        incr = (2 * dist_x) / (x_dim - 1);  //account for loops not going "all the way"
+//        incr = (2 * dist_x) / (u_dim - 1);  //account for loops not going "all the way"
         incr = (2 * dist_x) / (x_dim );  //account for loops not going "all the way"
         top_left = top_left + (U * dist_x) + (V * dist_y);
 

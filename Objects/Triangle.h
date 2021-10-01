@@ -26,6 +26,9 @@ public:
 
 //        self.vec0 = self.p1 - self.p0   # maybe with the definition of my plane, these can't be switched.
 //        self.vec1 = self.p2 - self.p0
+
+        this->bbox = BoundingBox(getBounds().first, getBounds().second);
+
     };
 
 //    Point get_hit_point(Ray inRay) override {
@@ -64,6 +67,16 @@ public:
 
 
 //        return false;
+    }
+    std::pair<Point, Point> getBounds() override {
+        double x_min = getMin(p0.x, p1.x, p2.x);
+        double x_max = getMax(p0.x, p1.x, p2.x);
+        double y_min = getMin(p0.y, p1.y, p2.y);
+        double y_max = getMax(p0.y, p1.y, p2.y);
+        double z_min = getMin(p0.z, p1.z, p2.z);
+        double z_max = getMax(p0.z, p1.z, p2.z);
+
+        return {Point(x_min, y_min, z_min), Point(x_max, y_max, z_max)};
     }
 
     double get_dist(Ray inRay) override {
@@ -107,6 +120,18 @@ private:
     Point p2;
     Point normal;
     double distance;
+
+    double getMin(double a, double b, double c){        //TODO: make accept arbitrary number of points, so polygons work.
+        if(a < b && a < c) return a;
+        if(b < c) return b;
+        return c;
+    }
+
+    double getMax(double a, double b, double c){        //TODO: make accept arbitrary number of points, so polygons work.
+        if(a > b && a > c) return a;
+        if(b > c) return b;
+        return c;
+    }
 };
 
 

@@ -79,6 +79,7 @@ CMakeFiles/RT.dir/Material.cpp.o: \
  ../Point.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Objects/AABox.cpp.o: \
+ ../Bounding/BoundingBox.h \
  ../Color.h \
  ../Material.h \
  ../Objects/AABox.cpp \
@@ -88,6 +89,7 @@ CMakeFiles/RT.dir/Objects/AABox.cpp.o: \
  ../Ray.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Objects/Object.cpp.o: \
+ ../Bounding/BoundingBox.h \
  ../Color.h \
  ../Material.h \
  ../Objects/Object.cpp \
@@ -96,6 +98,7 @@ CMakeFiles/RT.dir/Objects/Object.cpp.o: \
  ../Ray.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Objects/Plane.cpp.o: \
+ ../Bounding/BoundingBox.h \
  ../Color.h \
  ../Material.h \
  ../Objects/Object.h \
@@ -105,6 +108,7 @@ CMakeFiles/RT.dir/Objects/Plane.cpp.o: \
  ../Ray.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Objects/Sphere.cpp.o: \
+ ../Bounding/BoundingBox.h \
  ../Color.h \
  ../Material.h \
  ../Objects/Object.h \
@@ -114,6 +118,7 @@ CMakeFiles/RT.dir/Objects/Sphere.cpp.o: \
  ../Ray.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Objects/Triangle.cpp.o: \
+ ../Bounding/BoundingBox.h \
  ../Color.h \
  ../Material.h \
  ../Objects/Object.h \
@@ -138,6 +143,8 @@ CMakeFiles/RT.dir/Ray.cpp.o: \
  ../Ray.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Scene.cpp.o: \
+ ../Bounding/BoundingBox.h \
+ ../Bounding/Node.h \
  ../Color.h \
  ../Lights/Light.h \
  ../Lights/SunLight.h \
@@ -152,6 +159,8 @@ CMakeFiles/RT.dir/UVPoint.cpp.o: \
  ../UVPoint.cpp \
  ../UVPoint.h
 CMakeFiles/RT.dir/raytracer.cpp.o: \
+ ../Bounding/BoundingBox.h \
+ ../Bounding/Node.h \
  ../Camera.h \
  ../Color.h \
  ../DataGrid.h \

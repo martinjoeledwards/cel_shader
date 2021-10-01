@@ -31,8 +31,8 @@
 #include "Lights/BoxLight.h"
 #include "SceneMaker.h"
 #include <random>
-bool rowThreading = false;
-//bool rowThreading = true;
+//bool multiThreading = false;
+bool multiThreading = true;
 const int num_threads = (int) std::thread::hardware_concurrency() - 1;
 
 void renderRow(Camera myCamera, Scene myScene, DataGrid myGrid, int j, int x_dim){
@@ -55,27 +55,9 @@ int main() {
 
 
     SceneMaker sceneMaker;
-    Scene myScene2 = *sceneMaker.scene1();
+//    Scene myScene = *sceneMaker.scene2();
+    Scene myScene = *sceneMaker.scene3();
 
-    {
-//    double aspect_ratio = 1.0 / .75;
-//
-//    int sampleSubdiv = 4;
-//    bool rayJitter = true;
-//
-//    auto x_dim = 320u;       //default 320
-//    auto y_dim = x_dim / aspect_ratio; //240p
-//    double fov = 100.0;
-//
-//
-//    Point cam_from(1.5, 1.5, 1.5);
-//    Point cam_at(0, 0, 0);
-//    Point cam_up(0, 1, 0);
-//
-//    Camera myCamera(x_dim, aspect_ratio, fov, cam_from, cam_at, cam_up);
-//    myCamera.setRayJitter(rayJitter);
-//    myCamera.setSampleSubdiv(sampleSubdiv);
-    }
 
     SceneMaker sceneMaker2;
     Camera myCamera = *sceneMaker2.camera1();
@@ -86,7 +68,7 @@ int main() {
 
     DataGrid myGrid(x_dim, y_dim);
 
-    if (rowThreading) {
+    if (multiThreading) {
 
 //    main loop for everything
         for (auto j = 0u; j < y_dim; j++) {
@@ -102,7 +84,7 @@ int main() {
                 }
             }
 
-            threads.emplace_back(renderRow, myCamera, myScene2, myGrid, j, x_dim);
+            threads.emplace_back(renderRow, myCamera, myScene, myGrid, j, x_dim);
 
             my_prog.print_progress(j);
         }
@@ -117,7 +99,7 @@ int main() {
         for (auto j = 0u; j < y_dim; j++) {
                 for (auto i = 0u; i < x_dim; i++) {
                     std::vector<Ray> rayList = myCamera.getRayList(i, j);
-                    myGrid.set(i, j, myScene2.getColorRecursiveMulti(rayList) * 255.0);
+                    myGrid.set(i, j, myScene.getColorRecursiveMulti(rayList) * 255.0);
                 }
             my_prog.print_progress(j);
         }

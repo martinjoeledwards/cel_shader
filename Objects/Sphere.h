@@ -7,11 +7,14 @@
 #include "Object.h"
 #include <cmath>
 
+
 class Sphere: public Object {
 public:
     Sphere(Material *inMat, Point center, double rad) : Object(inMat) {
         this->center = center;
         this->rad = rad;
+        this->bbox = BoundingBox(getBounds().first, getBounds().second);
+
 //        this->myMat = myMat;
     }
 
@@ -43,6 +46,30 @@ public:
 
     Point getSurfNorm(Point hit, Ray inRay) override {
         return norm(hit - center);
+    }
+
+    std::pair<Point, Point> getBounds() override {
+        return {Point(center.x - rad, center.y - rad, center.z - rad),
+                Point(center.x + rad, center.y + rad, center.z + rad)};
+    }
+
+
+    std::pair<double, double> getUV(Point point) {
+        double x = point.x - center.x;
+        double y = point.y - center.y;
+        double z = point.z - center.z;      //FIXME: adjust for radius
+        double theta = atan2(x, z);
+        double phi = acos(y);
+        double u = (theta + M_PI/ 2) /( 2 * M_PI);
+        u = 1.0 - (u + .5);
+        double v = 1 - phi / M_PI;
+
+        if(u < 0) u = 0.01;
+        if(u >= 1) u = .999;
+        if(v < 0) v = 0.01;
+        if(v >= 1) v = .999;
+        return {u, v};
+
     }
 
 private:

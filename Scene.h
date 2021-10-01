@@ -10,6 +10,7 @@
 #include "Lights/Light.h"
 #include "Color.h"
 #include "Point.h"
+#include "Bounding/Node.h"
 #include <cmath>
 #include <cstdarg>
 
@@ -36,12 +37,20 @@ public:
 
     void AddObjects(Object* t){
         this->objects.push_back(t);
+
+        rootNode.addObject(t);
     }
 
     template<typename... Args>
     void AddObjects(Object* t, Args... args){
          this->objects.push_back(t);
         AddObjects(args...);
+
+        rootNode.addObject(t);
+     }
+
+     void initialize(){
+         rootNode.initialize();
      }
 
     void AddLights(Light* t){
@@ -133,8 +142,20 @@ public:
 
             //diffuse
 
+            Color diff_col;
             double dot_val = dot(direction, surf_norm);
-            Color diff_col = closest->myMat->getDiff(dot_val, curr_light->getColor());
+            if(closest->myMat->hasTex()) {
+                auto u_v = closest->getUV(hit_point);
+
+                double u = u_v.first;
+                double v = u_v.second;
+//                std::cout << "u and v: " << u << "," << v << std::endl;
+                diff_col = closest->myMat->getDiff(dot_val, curr_light->getColor(), u, v);
+            } else {
+                diff_col = closest->myMat->getDiff(dot_val, curr_light->getColor());
+            }
+
+
             if (dot_val < 0)
                 diff_col = Color(0, 0, 0);
             all_light += diff_col * Color(1 - shadowFactor);
@@ -193,7 +214,7 @@ private:
     std::vector<Object*> objects;
     std::vector<Light*> lights;
     double shift_amount = 0.0001;
-    double jitter_amount = 0.05;        //TODO: make jitter amount reliant on material properties
+    Node rootNode;
 };
 
 
