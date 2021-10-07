@@ -56,11 +56,13 @@ int main() {
 
     SceneMaker sceneMaker;
 //    Scene myScene = *sceneMaker.scene2();
-    Scene myScene = *sceneMaker.scene3();
+//    Scene myScene = *sceneMaker.scene3();
+    Scene myScene = *sceneMaker.scene4();
 
 
     SceneMaker sceneMaker2;
     Camera myCamera = *sceneMaker2.camera1();
+//    Camera myCamera = *sceneMaker2.camera2();
     auto x_dim =myCamera.get_x_dim();
     auto y_dim =myCamera.get_y_dim();
 

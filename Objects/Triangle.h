@@ -19,6 +19,8 @@ public:
 
         Point vec0 = p1 - p0;
         Point vec1 = p2 - p0;
+
+        this->totalArea = getArea(this->p0, this->p1, this->p2);
 //        std::cout << "Point is " << vec0 << " " << vec1 << " " << cross(vec1, vec0) << std::endl;
         normal = norm(cross(vec1, vec0));
         distance = -dot(normal, p1);
@@ -114,12 +116,20 @@ public:
         }
     }
 
+    std::pair<double, double> getUV(Point point) {
+        double uArea = getArea(point, p0, p1);
+        double vArea = getArea(point, p0, p2);
+//        std::cout << "u and v are " << uArea / totalArea << " " << vArea / totalArea << "\n";
+        return {uArea / totalArea, vArea / totalArea};
+    }
+
 private:
     Point p0;
     Point p1;
     Point p2;
     Point normal;
     double distance;
+    double totalArea;
 
     double getMin(double a, double b, double c){        //TODO: make accept arbitrary number of points, so polygons work.
         if(a < b && a < c) return a;
@@ -131,6 +141,13 @@ private:
         if(a > b && a > c) return a;
         if(b > c) return b;
         return c;
+    }
+
+    double getArea(Point center, Point in1, Point in2){
+        in1 = in1 - center;
+        in2 = in2 - center;
+        double pArea = magnitude(cross((in1), (in2)));
+        return  pArea / 2.0;
     }
 };
 
