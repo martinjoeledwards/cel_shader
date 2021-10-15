@@ -12,35 +12,38 @@
 
 //TODO: clean up this class. There's unnecessary stuff.
 // Takes in location, aspect ratio, etc. Returns rays when queried with i and j.
-//TODO: Multi-sampling: return a list of rays
 
 class Camera {
 public:
-    Camera(unsigned int x_dim, double aspect, double fov, Point from, Point at, Point up){
+
+    Camera(unsigned int x_dim = 320, double aspect = 16.0 / 9.0, double fov = 140,
+           Point from = Point(0, .5, 1),
+           Point at = Point(0, 0, 0),
+           Point up = Point(0, 1, 0)        ){
         this->x_dim = x_dim;
         this->aspect = aspect;
         this->fov = fov;
         this->from = from;
-        this->at = at;
-        this->up = up;
+//        this->at = at;
+//        this->up = up;
 
         this->y_dim = this->x_dim / aspect;
         N = norm(sub(from, at));
         U = norm(cross(up, N));
         V = norm(cross(N, U));
 
-        grid_center = this->from - N;
+//        grid_center = this->from - N;
 
         dist_x = (tan(PI * (fov / 2.0) / 180.0));
         dist_y = dist_x / aspect;
 
-//        incr = (2 * dist_x) / (u_dim - 1);  //account for loops not going "all the way"
         incr = (2 * dist_x) / (x_dim );  //account for loops not going "all the way"
         top_left = top_left + (U * dist_x) + (V * dist_y);
 
         u_step_vec = U.negate() * incr;
         v_step_vec = V.negate() * incr;
     }
+
 
     void setRayJitter(bool set){ rayJitter = set; }
     void setSampleSubdiv(int set){ sampleSubdiv = set; }
@@ -74,11 +77,27 @@ public:
         return rayList;
     }
 
-    unsigned int get_x_dim(){
+    unsigned int get_x_dim() const{
         return x_dim;
     }
-    unsigned int get_y_dim(){
+    unsigned int get_y_dim() const{
         return y_dim;
+    }
+
+    void setNumBounces(int num) {
+        this->numBounces = num;
+    }
+
+    void setShadowSamples(int num) {
+        this->shadowSamples = num;
+    }
+
+    int getNumBounces() const {
+        return numBounces;
+    }
+
+    int getShadowSamples() const {
+        return shadowSamples;
     }
 
 private:
@@ -89,15 +108,19 @@ private:
     double fov;
     bool rayJitter = true;
     int sampleSubdiv = 1;
+
+    int numBounces = 2;
+    int shadowSamples = 2;
+
     Point from;
-    Point at;
-    Point up;
+//    Point at;
+//    Point up;
 
     Point N;
     Point U;
     Point V;
 
-    Point grid_center;
+//    Point grid_center;
 
     double dist_x;
     double dist_y;

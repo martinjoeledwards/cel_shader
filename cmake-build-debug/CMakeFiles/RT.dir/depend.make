@@ -145,7 +145,9 @@ CMakeFiles/RT.dir/Ray.cpp.o: \
 CMakeFiles/RT.dir/Scene.cpp.o: \
  ../Bounding/BoundingBox.h \
  ../Bounding/Node.h \
+ ../Camera.h \
  ../Color.h \
+ ../Helpers.h \
  ../Lights/Light.h \
  ../Lights/SunLight.h \
  ../Material.h \

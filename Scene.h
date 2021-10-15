@@ -11,6 +11,7 @@
 #include "Color.h"
 #include "Point.h"
 #include "Bounding/Node.h"
+#include "Camera.h"
 #include <cmath>
 #include <cstdarg>
 
@@ -24,16 +25,9 @@ class Scene {
 public:
      Scene(Color ambient = Color(.5, .5, .5),
           Color background = Color(.3, .3, .3)){
-        this->ambient = ambient;
-        this->background = background;
-        numBounces = 0;
-        shadowSamples = 1;
+         this->ambient = ambient;
+         this->background = background;
     }
-    void setNumBounces(int num){
-         numBounces = num;
-     }
-
-     void setShadowSamples(int num){ shadowSamples = num ;}
 
     void AddObjects(Object* t){
         this->objects.push_back(t);
@@ -85,7 +79,7 @@ public:
      // Returns 1 if completely in shadow. Returns 0 if completely lit.
      double getShadowFactor(Point new_orig, Light *in_light){   //TODO: if light is not area light, only do 1 sample.
          double shadowFac = 0;
-         for (int i = 0; i < shadowSamples; i++) {
+         for (int i = 0; i < myCamera->getShadowSamples(); i++) {
              auto light_hit = in_light->getLightHit(new_orig);
 
              auto shadow = getClosestObject(new_orig, light_hit.first);
@@ -97,13 +91,13 @@ public:
              }
          }
 //         std::cout << shadowFac << "\n";
-         return shadowFac / shadowSamples;
+         return shadowFac / myCamera->getShadowSamples();
      }
 
     Color getColorRecursiveMulti(std::vector<Ray> inRays){
         Color total;
         for(Ray curr_ray : inRays) {
-            Color aggregate = GetPixelColor(curr_ray, numBounces);
+            Color aggregate = GetPixelColor(curr_ray, myCamera->getNumBounces());
                 total += aggregate;
         }
         total /= (double)inRays.size();     // averages light sample colors
@@ -205,12 +199,19 @@ public:
         return all_light;
     }
 
+    void SetCamera(Camera *pCamera){
+         delete myCamera;
+         myCamera = pCamera;
+//         numBounces = myCamera->getNumBounces();
+//         shadowSamples = myCamera->getShadowSamples();
+     }
+
+    Camera* myCamera = new Camera();
+
 private:
     Color ambient;
     Color background;
     Color miss{-1, -1, -1};
-    int numBounces;
-    int shadowSamples;
     std::vector<Object*> objects;
     std::vector<Light*> lights;
     double shift_amount = 0.0001;

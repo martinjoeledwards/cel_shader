@@ -35,16 +35,15 @@
 bool multiThreading = true;
 const int num_threads = (int) std::thread::hardware_concurrency() - 1;
 
-void renderRow(Camera myCamera, Scene myScene, DataGrid myGrid, int j, int x_dim){
+void renderRow(Scene myScene, DataGrid myGrid, int j, int x_dim){
     for (auto i = 0u; i < x_dim; i++) {
-        std::vector<Ray> rayList = myCamera.getRayList(i, j);
+        std::vector<Ray> rayList = myScene.myCamera->getRayList(i, j);
         myGrid.set(i, j, myScene.getColorRecursiveMulti(rayList) * 255.0);
     }
 }
 
 
 int main() {
-//    srand(time(NULL));
     //Welcome statement
     std::cout << "Welcome to Martin's fabulous Ray tracer!" << std::endl;
 
@@ -53,18 +52,15 @@ int main() {
     std::vector<std::thread> threads;
 
 
-
     SceneMaker sceneMaker;
+    Scene myScene = *sceneMaker.scene1();
 //    Scene myScene = *sceneMaker.scene2();
 //    Scene myScene = *sceneMaker.scene3();
-    Scene myScene = *sceneMaker.scene4();
+//    Scene myScene = *sceneMaker.scene4();
 
 
-    SceneMaker sceneMaker2;
-    Camera myCamera = *sceneMaker2.camera1();
-//    Camera myCamera = *sceneMaker2.camera2();
-    auto x_dim =myCamera.get_x_dim();
-    auto y_dim =myCamera.get_y_dim();
+    auto x_dim =myScene.myCamera->get_x_dim();
+    auto y_dim =myScene.myCamera->get_y_dim();
 
     Progress my_prog(y_dim);
 
@@ -86,7 +82,7 @@ int main() {
                 }
             }
 
-            threads.emplace_back(renderRow, myCamera, myScene, myGrid, j, x_dim);
+            threads.emplace_back(renderRow, myScene, myGrid, j, x_dim);
 
             my_prog.print_progress(j);
         }
@@ -100,7 +96,7 @@ int main() {
     } else {
         for (auto j = 0u; j < y_dim; j++) {
                 for (auto i = 0u; i < x_dim; i++) {
-                    std::vector<Ray> rayList = myCamera.getRayList(i, j);
+                    std::vector<Ray> rayList = myScene.myCamera->getRayList(i, j);
                     myGrid.set(i, j, myScene.getColorRecursiveMulti(rayList) * 255.0);
                 }
             my_prog.print_progress(j);

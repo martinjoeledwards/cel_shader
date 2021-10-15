@@ -13,21 +13,26 @@ public:
 
         double aspect_ratio = 16.0 / 9.0;
 
-        int sampleSubdiv = 6;
-        bool rayJitter = true;
+        int sampleSubdiv = 1;
+        bool rayJitter = false;
 
-        auto x_dim = 1000u;       //default 320
+        auto x_dim = 320u;       //default 320
         auto y_dim = x_dim / aspect_ratio; //240p
         double fov = 140.0;
 
+        int num_bounces = 2;
+        int shadowSamples = 2;
 
-        Point cam_from(1.5, 2, 4);
+
+        Point cam_from(1.5, .6, 4);
         Point cam_at(0, 0, 0);
         Point cam_up(0, 1, 0);
 
         auto myCamera = new Camera(x_dim, aspect_ratio, fov, cam_from, cam_at, cam_up);
         myCamera->setRayJitter(rayJitter);
         myCamera->setSampleSubdiv(sampleSubdiv);
+        myCamera->setNumBounces(num_bounces);
+        myCamera->setShadowSamples(shadowSamples);
 
         return myCamera;
 
@@ -57,62 +62,30 @@ public:
     }
 
     Scene* scene1(){
-        int num_bounces = 3;        //TODO: move these two to the camera class? And give scene a camera member?
-        int shadowSamples = 4;
-
 
 //    create objects
-        auto* refrSphere = new Sphere(refractive_smooth, Point(-.51, 0.3, -0.3), .5);
-        auto* refrSphereR = new Sphere(refractive_rough, Point(.51, 0.3, -0.6), .4);
-        auto* blueSphere = new Sphere(reflect_smooth, Point(-.5, 0, .6), .3);
-        auto* reflSphereRough = new Sphere(reflect_rough, Point(0, 0, .6), .2);
-        auto* greenSphere = new Sphere(green_mat, Point(.6, 0, 0), .3);
-
-        auto* blueBox = new AABox(blue_mat, Point(.2, .2, .2), Point(0, 0, 0));
-        auto* redBox = new AABox(red_mat, Point(0, 0, -.1), Point(.2,.2, -.03));
-        auto* redBoxLong = new AABox(red_mat, Point(-2, 0.1, -1), Point(2,.2, -.9));
-
-        Point p0(100, -.4, -100);
-        Point p1(-100, -.4, -100);
-        Point p2(0, -.4, 100);
-        auto* triangle = new Triangle(green_mat, p0, p2, p1);
-
-        auto* reflect_plane = new Plane(reflect_smooth, Point(1, 1, .3), -.4);
-        auto* diff_plane = new Plane(green_mat, Point(0, 1, 0), -.2);
+        auto* greenSphere = new Sphere(blue_mat, Point(0, .8, 0), .7);
+        auto* diff_plane = new Plane(white_mat, Point(0, 1, 0), 0);
 
 //    create lights
-//        SunLight* sunlight(whiteOut, Point(-1, 1, 1));
-//        PointLight* pointlight(white, Point(-1, .5, 0));
-//        PointLight* pointlightup(blue, Point(0, 2, 0));
-        auto* boxLight = new BoxLight(*white, Point(-.5, 2, -.5), Point(.2, 3, .2));
+        auto sunlight = new SunLight(*white, Point(-1, 1, 1));
 
 
 //        create scene and set rendering values
-        auto* myScene = new Scene();
-        myScene->setNumBounces(num_bounces);
-        myScene->setShadowSamples(shadowSamples);
+        auto* myScene = new Scene(Color(0, 0, 0), Color(.1, .1, .1));
 
 // Add objects
-//    myScene.AddObjects(&reflect_plane);
-//    myScene.AddObjects(&triangle);
 
         myScene->AddObjects(diff_plane);
-        myScene->AddObjects(refrSphereR);
-        myScene->AddObjects(refrSphere);
-        myScene->AddObjects(blueSphere);
         myScene->AddObjects(greenSphere);
-        myScene->AddObjects(reflSphereRough);
-        myScene->AddObjects(blueBox);
-        myScene->AddObjects(redBox);
-        myScene->AddObjects(redBoxLong);
 
         // Add lights
-//    myScene.AddLights(&pointlight);
-//    myScene.AddLights(&sunlight);
-//    myScene.AddLights(&pointlightup);
-        myScene->AddLights(boxLight);
+        myScene->AddLights(sunlight);
 
-        myScene->initialize();
+        myScene->SetCamera(camera1());
+
+//        initialize bounding box hierarchy
+//        myScene->initialize();
 
         return myScene;
     }
@@ -149,8 +122,8 @@ public:
 
 //        create scene and set rendering values
         auto* myScene = new Scene();
-        myScene->setNumBounces(num_bounces);
-        myScene->setShadowSamples(shadowSamples);
+//        myScene->setNumBounces(num_bounces);
+//        myScene->setShadowSamples(shadowSamples);
 
 // Add objects
 
@@ -196,8 +169,8 @@ public:
 
 //        create scene and set rendering values
         auto* myScene = new Scene();
-        myScene->setNumBounces(num_bounces);
-        myScene->setShadowSamples(shadowSamples);
+//        myScene->setNumBounces(num_bounces);
+//        myScene->setShadowSamples(shadowSamples);
 
 // Add objects
 
@@ -237,8 +210,8 @@ public:
 
 //        create scene and set rendering values
         auto* myScene = new Scene();
-        myScene->setNumBounces(num_bounces);
-        myScene->setShadowSamples(shadowSamples);
+//        myScene->setNumBounces(num_bounces);
+//        myScene->setShadowSamples(shadowSamples);
 
 // Add objects
 
@@ -255,7 +228,6 @@ public:
         return myScene;
     }
 
-
 private:
     //    create colors
     Color* red = new Color(1, 0, 0);
@@ -270,6 +242,7 @@ private:
     Material* red_mat = new Material(*red, *red, .8, .3, .1, .2, 0, 0, 0, 6, 0);
     Material* green_mat = new Material(*green, *white, .4, .5, .1, 0, 0, 0, 0, 6, 0);
     Material* blue_mat = new Material(*blue, *white, .3, .5, .3, 0, 0, 0, 0, 6, 0);
+    Material* white_mat = new Material(*white, *white, .9, .1, .02, 0, 0, 0, 0, 6, 0);
     Material* refractive_smooth = new Material(*white, *white, .005, .5, .002, .1, .8, 0, 0, 16, 1.3);
     Material* refractive_rough = new Material(*white, *white, .005, .4, .004, .1, .8, 0.09, .09, 8, 1.2);
 
