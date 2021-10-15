@@ -98,6 +98,8 @@ Point refract_vec(double ior, Point incident, Point normal);
 
 Point jitter_vector(Point vector, double amount);
 
+Point randNormalJitter(Point normal);
+
 std::ostream& operator<<(std::ostream& os, const Point& p);
 
 

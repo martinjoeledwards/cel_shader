@@ -62,15 +62,19 @@ public:
 
         for(int f = 0; f < sampleSubdiv; f++){
             for(int g = 0; g < sampleSubdiv; g++) {
-                double x_rand = getRandDouble(0, 1);        //randomly jitters pixel samples
-                double y_rand = getRandDouble(0, 1);
-                if(!rayJitter){
-                    x_rand = .5;
-                    y_rand = .5;
+                for(int b = 0; b < samples; b++) {          // add a ray for each sample
+
+                    double x_rand = getRandDouble(0, 1);        //randomly jitters pixel samples
+                    double y_rand = getRandDouble(0, 1);
+                    if (!rayJitter) {
+                        x_rand = .5;
+                        y_rand = .5;
+                    }
+                    Point gridPoint = pixel_upper_left + u_subdiv_step * (f + x_rand);
+                    gridPoint = gridPoint + v_subdiv_step * (g + y_rand);
+                    rayList.emplace_back(from, gridPoint - from);
                 }
-                Point gridPoint = pixel_upper_left + u_subdiv_step * (f + x_rand);
-                gridPoint = gridPoint + v_subdiv_step * (g + y_rand);
-                rayList.emplace_back(from, gridPoint - from);
+
             }
         }
 
@@ -92,12 +96,20 @@ public:
         this->shadowSamples = num;
     }
 
+    void setSamples(int num){
+        this->samples = num;
+    }
+
     int getNumBounces() const {
         return numBounces;
     }
 
     int getShadowSamples() const {
         return shadowSamples;
+    }
+
+    int getSamples() const {
+        return samples;
     }
 
 private:
@@ -111,6 +123,7 @@ private:
 
     int numBounces = 2;
     int shadowSamples = 2;
+    int samples = 1;
 
     Point from;
 //    Point at;

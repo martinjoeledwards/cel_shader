@@ -13,6 +13,7 @@ CMakeFiles/RT.dir/Bounding/Node.cpp.o: \
  ../Bounding/Node.cpp \
  ../Bounding/Node.h \
  ../Color.h \
+ ../Helpers.h \
  ../Material.h \
  ../Objects/Object.h \
  ../Point.h \
@@ -74,6 +75,7 @@ CMakeFiles/RT.dir/Lights/SunLight.cpp.o: \
  ../UVPoint.h
 CMakeFiles/RT.dir/Material.cpp.o: \
  ../Color.h \
+ ../Helpers.h \
  ../Material.cpp \
  ../Material.h \
  ../Point.h \
@@ -81,6 +83,7 @@ CMakeFiles/RT.dir/Material.cpp.o: \
 CMakeFiles/RT.dir/Objects/AABox.cpp.o: \
  ../Bounding/BoundingBox.h \
  ../Color.h \
+ ../Helpers.h \
  ../Material.h \
  ../Objects/AABox.cpp \
  ../Objects/AABox.h \
@@ -91,6 +94,7 @@ CMakeFiles/RT.dir/Objects/AABox.cpp.o: \
 CMakeFiles/RT.dir/Objects/Object.cpp.o: \
  ../Bounding/BoundingBox.h \
  ../Color.h \
+ ../Helpers.h \
  ../Material.h \
  ../Objects/Object.cpp \
  ../Objects/Object.h \
@@ -100,6 +104,7 @@ CMakeFiles/RT.dir/Objects/Object.cpp.o: \
 CMakeFiles/RT.dir/Objects/Plane.cpp.o: \
  ../Bounding/BoundingBox.h \
  ../Color.h \
+ ../Helpers.h \
  ../Material.h \
  ../Objects/Object.h \
  ../Objects/Plane.cpp \
@@ -110,6 +115,7 @@ CMakeFiles/RT.dir/Objects/Plane.cpp.o: \
 CMakeFiles/RT.dir/Objects/Sphere.cpp.o: \
  ../Bounding/BoundingBox.h \
  ../Color.h \
+ ../Helpers.h \
  ../Material.h \
  ../Objects/Object.h \
  ../Objects/Sphere.cpp \
@@ -120,6 +126,7 @@ CMakeFiles/RT.dir/Objects/Sphere.cpp.o: \
 CMakeFiles/RT.dir/Objects/Triangle.cpp.o: \
  ../Bounding/BoundingBox.h \
  ../Color.h \
+ ../Helpers.h \
  ../Material.h \
  ../Objects/Object.h \
  ../Objects/Triangle.cpp \
@@ -148,6 +155,7 @@ CMakeFiles/RT.dir/Scene.cpp.o: \
  ../Camera.h \
  ../Color.h \
  ../Helpers.h \
+ ../Lights/BoxLight.h \
  ../Lights/Light.h \
  ../Lights/SunLight.h \
  ../Material.h \

@@ -7,18 +7,18 @@
 #include "fstream"
 #include "iostream"
 #include "Color.h"
+#include "Helpers.h"
 
 // Stores how the material reacts to light:
-// contains diffuse, specular, ambient components; diff and spec colors: gloss value; transmissive component or bool?
+// contains diffuse, specular components; diff and spec colors: gloss value; transmissive component or bool?
 class Material {
 public:
-    explicit Material(Color diffuse, Color specular, double fac_diff, double fac_spec, double fac_amb, double fac_refl,
-                      double fac_tran, double jit_refl, double jit_tran, int gloss, double ior) {
+    explicit Material(Color diffuse, Color specular, double fac_diff, double fac_spec, double fac_refl, double fac_tran,
+                      double jit_refl, double jit_tran, int gloss, double ior) {
         this->diffuse = diffuse;
         this->specular = specular;
         this->fac_diff = fac_diff;
         this->fac_spec = fac_spec;
-        this->fac_amb = fac_amb;
         this->fac_refl = fac_refl;
         this->fac_tran = fac_tran;
         this->gloss = (gloss * 2) + 1;      // kind of a hack to keep from getting weird values in the glossiness calc. Dunno why it happens.
@@ -32,10 +32,6 @@ public:
 
     double getGloss(){
         return gloss;
-    }
-
-    Color getAmb(Color ambient){
-        return ambient * diffuse * fac_amb;
     }
 
     Color getDiff(double dot, Color light){
@@ -52,14 +48,6 @@ public:
 
     Color getSpec(double factor, Color light){
         return light * specular * fac_spec * factor;
-    }
-
-    double getReflFac(){
-        return fac_refl;
-    }
-
-    double getTranFac(){
-        return fac_tran;
     }
 
     double getIOR(){
@@ -125,6 +113,16 @@ public:
             exit(1);
         }
     }
+    int getPath(){
+        double prob_sum = fac_diff + fac_spec + fac_refl + fac_tran;
+        double random = getRandDouble(0, prob_sum);
+        if(random < (fac_diff + fac_spec)){
+            return 0;
+        } else if (random < fac_diff + fac_spec + fac_refl) {
+            return 1;
+        }
+        return 2;
+    }
 
 private:
     Color diffuse;
@@ -132,7 +130,6 @@ private:
 
     double fac_diff;
     double fac_spec;
-    double fac_amb;
     double fac_refl;
     double fac_tran;
     double refrac_index;

@@ -37,8 +37,7 @@ const int num_threads = (int) std::thread::hardware_concurrency() - 1;
 
 void renderRow(Scene myScene, DataGrid myGrid, int j, int x_dim){
     for (auto i = 0u; i < x_dim; i++) {
-        std::vector<Ray> rayList = myScene.myCamera->getRayList(i, j);
-        myGrid.set(i, j, myScene.getColorRecursiveMulti(rayList) * 255.0);
+        myGrid.set(i, j, myScene.getColorRecursiveMulti(i, j) * 255.0);
     }
 }
 
@@ -96,8 +95,8 @@ int main() {
     } else {
         for (auto j = 0u; j < y_dim; j++) {
                 for (auto i = 0u; i < x_dim; i++) {
-                    std::vector<Ray> rayList = myScene.myCamera->getRayList(i, j);
-                    myGrid.set(i, j, myScene.getColorRecursiveMulti(rayList) * 255.0);
+
+                    myGrid.set(i, j, myScene.getColorRecursiveMulti(i, j) * 255.0);
                 }
             my_prog.print_progress(j);
         }
