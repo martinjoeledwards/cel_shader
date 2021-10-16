@@ -26,7 +26,7 @@ public:
     virtual std::pair<Point, Point> getBounds() = 0;
 
     virtual std::pair<double, double> getUV(Point point){
-        return {.5, .5};
+        return {-1, -1};
     }
     virtual Point getSurfNorm(Point hit, Ray inRay) = 0;
     BoundingBox getBB(){
@@ -34,7 +34,11 @@ public:
     }
     Material* myMat;
     BoundingBox bbox;
-protected:
+
+    virtual void setUV(Point point, double *uIn, double *vIn) { //FIXME: have this actually be called?
+        *uIn = -1;
+        *vIn = -1;
+    }
 
 };
 

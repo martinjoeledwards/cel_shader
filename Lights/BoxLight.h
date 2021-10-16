@@ -39,10 +39,15 @@ public:
 
     Point getDirection(Point from) override {       //FIXME: maybe get rid of this and distance functions
         // returns direction to the center of the box
-        double center_x = ((x_max + x_min) / 2.0);
-        double center_y = ((y_max + y_min) / 2.0);
-        double center_z = ((z_max + z_min) / 2.0);
-        return norm(Point(center_x, center_y, center_z) - from);
+//        double center_x = ((x_max + x_min) / 2.0);
+//        double center_y = ((y_max + y_min) / 2.0);
+//        double center_z = ((z_max + z_min) / 2.0);
+//        return norm(Point(center_x, center_y, center_z) - from);
+
+        double x_val = getRandDouble(x_min, x_max);
+        double y_val = getRandDouble(y_min, y_max);
+        double z_val = getRandDouble(z_min, z_max);
+        return norm(Point(x_val, y_val, z_val) - from);
     }
 
     double getDistance(Point from) override {   //FIXME: maybe integrate this with some other calculations, so I make less calls in scene

@@ -13,12 +13,13 @@
 // contains diffuse, specular components; diff and spec colors: gloss value; transmissive component or bool?
 class Material {
 public:
-    explicit Material(Color diffuse, Color specular, double fac_diff, double fac_spec, double fac_refl, double fac_tran,
+    explicit Material(Color diffuse, Color specular, double fac_diff, double fac_refl, double fac_tran,
+                      double spec_weight,
                       double jit_refl, double jit_tran, int gloss, double ior) {
         this->diffuse = diffuse;
         this->specular = specular;
         this->fac_diff = fac_diff;
-        this->fac_spec = fac_spec;
+        this->spec_weight = spec_weight;
         this->fac_refl = fac_refl;
         this->fac_tran = fac_tran;
         this->gloss = (gloss * 2) + 1;      // kind of a hack to keep from getting weird values in the glossiness calc. Dunno why it happens.
@@ -34,20 +35,47 @@ public:
         return gloss;
     }
 
-    Color getDiff(double dot, Color light){
-        return diffuse * light * dot * fac_diff;
-    }
-
     Color getDiff(double dot, Color light, double u, double v){
-            int u_coord = floor(u * (double)u_dim);
-            int v_coord = floor(v * (double)v_dim);
-            Color colVal = ppmImage[v_coord][u_coord];
-            return colVal * light * dot * fac_diff;
+        if(u == -1 || v == -1){
+            return diffuse * light * dot;
+        }
+        int u_coord = floor(u * (double)u_dim);
+        int v_coord = floor(v * (double)v_dim);
+        Color colVal = ppmImage[v_coord][u_coord];
+        return colVal * light * dot * (1 - spec_weight);
     }
 
 
     Color getSpec(double factor, Color light){
-        return light * specular * fac_spec * factor;
+        return light * specular * spec_weight * factor;
+    }
+
+//    Color getDiffColor(){
+//        if(usesTex) return {0, 1, 0};   //error: not using texture.
+//        return diffuse;
+//    }
+
+
+    Color getDiffColor(double u, double v){
+        if(!usesTex) return diffuse;
+        if(u == -1 || v == -1) return {0, 1, 0};
+
+        int u_coord = floor(u * (double)u_dim);
+        int v_coord = floor(v * (double)v_dim);
+        Color colVal = ppmImage[v_coord][u_coord];
+        return colVal * fac_diff; // so that transparent objs don't take much color
+    }
+
+    Color getFullDiff(Color light_col, double dot_val, double refl_fac, double u, double v){
+        if(dot_val > 0) {
+            Color diff = getDiff(dot_val, light_col, u, v);
+            Color spec(0, 0, 0);
+            if (refl_fac > 0) {
+                spec = getSpec(refl_fac, light_col);
+            }
+            return diff + spec;
+        }
+        return {0, 0, 0};
     }
 
     double getIOR(){
@@ -114,11 +142,11 @@ public:
         }
     }
     int getPath(){
-        double prob_sum = fac_diff + fac_spec + fac_refl + fac_tran;
+        double prob_sum = fac_diff + fac_refl + fac_tran;
         double random = getRandDouble(0, prob_sum);
-        if(random < (fac_diff + fac_spec)){
+        if(random < (fac_diff)){
             return 0;
-        } else if (random < fac_diff + fac_spec + fac_refl) {
+        } else if (random < fac_diff + fac_refl) {
             return 1;
         }
         return 2;
@@ -129,7 +157,7 @@ private:
     Color specular;
 
     double fac_diff;
-    double fac_spec;
+    double spec_weight;
     double fac_refl;
     double fac_tran;
     double refrac_index;

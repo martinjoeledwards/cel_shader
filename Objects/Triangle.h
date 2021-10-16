@@ -123,6 +123,14 @@ public:
         return {uArea / totalArea, vArea / totalArea};
     }
 
+    void setUV(Point point, double *uIn, double *vIn) override {
+        double uArea = getArea(point, p0, p1);
+        double vArea = getArea(point, p0, p2);
+        *uIn = uArea / totalArea;
+        *vIn = vArea / totalArea;
+//        return {uArea / totalArea, vArea / totalArea};
+    }
+
 private:
     Point p0;
     Point p1;

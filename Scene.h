@@ -116,14 +116,14 @@ public:
         return total.clip();        // clips to light value of 1
     }
 
-    Color GetPixelColor(Ray inRay, int iters){      //FIXME: use brdf stuff for diffuse color
+    Color GetPixelColor(Ray inRay, int iters){      //FIXME: use spherical stuff for diffuse color
 
         double lowest_t;
 
         auto myPair = getClosestObject(inRay.getOrigin(), inRay.getDir());
         Object *closest = myPair.first;
         lowest_t = myPair.second;
-        if (!closest) {       //no object hit: return miss
+        if (!closest) {       //no object hit: return background color
             return background;
         }
 
@@ -136,51 +136,51 @@ public:
         int prob_sum = currMat.getPath();
 
         if(prob_sum == 0) {
+            double u = -1;
+            double v = -1;
+            if (closest->myMat->hasTex()) {
+                closest->setUV(hit_point, &u, &v);
+            }
+
             Color all_light(0, 0, 0);
 
+            Color diff_spec = Color(0, 0, 0);
             //calculate direct illumination
             for (auto curr_light: lights) {
 
-//              Fixme: for now, I'm keeping the diffuse and specular colors coming from the center of the light. No softness yet.
                 double shadowFactor = getShadowFactor(float_point, curr_light);
-                Point direction = curr_light->getDirection(hit_point);
 
-                //diffuse
-                Color diff_col;
-                double dot_val = dot(direction, surf_norm);
-                if (closest->myMat->hasTex()) {
-                    auto u_v = closest->getUV(hit_point);
+                Color diff_col_looped(0);
+                for(int k = 0; k < myCamera->getShadowSamples(); k++ ){   // loop here for jittered samples!
+                    Point direction = curr_light->getDirection(hit_point);
 
-                    double u = u_v.first;
-                    double v = u_v.second;
-                    diff_col = closest->myMat->getDiff(dot_val, curr_light->getColor(), u, v);
-                } else {
-                    diff_col = closest->myMat->getDiff(dot_val, curr_light->getColor());
+                    Point refl_vec =
+                            (surf_norm * dot(direction, surf_norm) * 2) - direction;  //get reflection direction
+                    double refl_fac = pow(dot(direction, refl_vec), currMat.getGloss());
+
+                    double dot_val = dot(direction, surf_norm);
+
+                    diff_col_looped += closest->myMat->getFullDiff(curr_light->getColor(), dot_val, refl_fac, u, v);
                 }
+                diff_col_looped /= myCamera->getShadowSamples();
 
-
-                if (dot_val < 0)
-                    diff_col = Color(0, 0, 0);
-                all_light += diff_col * Color(1 - shadowFactor);
-
-                //specular
-                Point refl_vec =
-                        (surf_norm * dot(direction, surf_norm) * 2) - direction;  //get reflection direction
-                double refl_fac = pow(dot(direction, refl_vec), currMat.getGloss());
-                Color spec_col;
-                if (refl_fac > 0 && dot(direction, surf_norm) > 0) {
-                    spec_col = currMat.getSpec(refl_fac, Color(1, 1, 1));
-                } else {
-                    spec_col = Color(0, 0, 0);
-                }
-                all_light += spec_col * Color(1 - shadowFactor);
+                all_light += diff_col_looped * Color(1 - shadowFactor);
             }
 
-            //calculate indirect illumination: 8 samples for now
-            for (int i = 0; i < 8; i++){
-                Point newDir = randNormalJitter(surf_norm);
+            //calculate indirect illumination
+            Color indirect(0, 0, 0);
+            if(iters > 0) {
+                for (int i = 0; i < myCamera->getIndirectSamples(); i++) {
+                    Point newDir = randNormalJitter(surf_norm);
+                    Ray indirect_ray(hit_point + (newDir * shift_amount), newDir);
+                    Color indirect_col = GetPixelColor(indirect_ray, 0);    //only allow 1 bounce for now
 
+//                    indirect += indirect_col * dot(surf_norm, newDir); // takes angle into account
+                    indirect += indirect_col; // doesn't.
+                }
             }
+            indirect /= myCamera->getIndirectSamples();
+            all_light +=  indirect * currMat.getDiffColor(u, v);
 
             return all_light;
         }
@@ -192,14 +192,8 @@ public:
                 Ray reflected_ray(hit_point + (reflected_vec * shift_amount), reflected_vec);
 
                 Color reflected_color = GetPixelColor(reflected_ray, iters - 1);
-                if (reflected_color == miss) {
-                    return background;
-                } else {
-                    return reflected_color;
-                }
+                return reflected_color;
             }
-
-//            return all_light;
         }
 
         else if (prob_sum == 2) {
@@ -208,13 +202,8 @@ public:
                 Point refracted_vec = refract_vec(currMat.getIOR(), inRay.getDir(), surf_norm);
                 refracted_vec = jitter_vector(refracted_vec, currMat.getTranJit());
                 Ray refracted_ray(hit_point + (refracted_vec * shift_amount), refracted_vec);
-                Color refracted_color = GetPixelColor(refracted_ray,
-                                                      iters - 1);        //FIXME fixed infinite recursion, I guess
-                if (refracted_color == miss) {
-                    return background;
-                } else {
-                    return refracted_color;
-                }
+                Color refracted_color = GetPixelColor(refracted_ray,iters - 1);  //FIXME fixed infinite recursion, I guess
+                return refracted_color;
             }
         }
         std::cout << "error in material: no light component calculated" << std::endl;
@@ -230,7 +219,6 @@ public:
 
 private:
     Color background;
-    Color miss{-1, -1, -1};
     std::vector<Object*> objects;
     std::vector<Light*> lights;
     double shift_amount = 0.0001;

@@ -112,6 +112,14 @@ public:
         return samples;
     }
 
+    void setIndirectSamples(int i) {
+        indirectSamples = i;
+    }
+
+    int getIndirectSamples() const {
+        return indirectSamples;
+    }
+
 private:
     double PI = 3.1415926;
     unsigned int x_dim;
@@ -124,6 +132,7 @@ private:
     int numBounces = 2;
     int shadowSamples = 2;
     int samples = 1;
+    int indirectSamples = 1;
 
     Point from;
 //    Point at;

@@ -14,15 +14,16 @@ public:
         double aspect_ratio = 16.0 / 9.0;
 
         int sampleSubdiv = 1;
-        int samples = 512;
-        bool rayJitter = true;
+        int samples = 64;
+        int indirect_samples = 8;
+        bool rayJitter = false;
 
         auto x_dim = 320u;       //default 320
         auto y_dim = x_dim / aspect_ratio; //240p
         double fov = 140.0;
 
         int num_bounces = 4;
-        int shadowSamples = 32;
+        int shadowSamples = 8;
 
 
         Point cam_from(1.5, .6, 4);
@@ -35,6 +36,7 @@ public:
         myCamera->setSamples(samples);
         myCamera->setNumBounces(num_bounces);
         myCamera->setShadowSamples(shadowSamples);
+        myCamera->setIndirectSamples(indirect_samples);
 
         return myCamera;
 
@@ -64,26 +66,31 @@ public:
     }
 
     Scene* scene1(){
-
 //    create objects
-        auto* greenSphere = new Sphere(blue_mat, Point(0, .8, 0), .7);
-        auto* diff_plane = new Plane(reflect_smooth, Point(0, 1, 0), 0);
+        jupiter->setTexture("Textures/jupiter.ppm");
+        auto* jupiter_sphere = new Sphere(jupiter, Point(1.7, 1, .6), 1);
+        auto* redSphere = new Sphere(white_mat, Point(0, 1, -.5), .9);
+        auto* diff_plane = new Plane(red_solid, Point(0, 1, 0), -.1);
 
 //    create lights
-        auto sunlight = new SunLight(*white, Point(-1, 1, 1));
-        auto boxLight = new BoxLight(*white, Point(-2, 1, 0), Point(-2.1, 1.1, 0.1));
+        auto sunlight = new SunLight(Color(.4), Point(-1, 1, 1));
+        auto boxLight = new BoxLight(*white, Point(-2, 1, 0), Point(-2.4, 1.4, 0.4));
+        auto pointLight = new PointLight(*white, Point(-.4, 0, 0));
 
 //        create scene and set rendering values
-        auto* myScene = new Scene(Color(.6, .6, .6));
+        auto global_light = Color(.3);
+        auto myScene = new Scene(global_light);
 
 // Add objects
 
         myScene->AddObjects(diff_plane);
-        myScene->AddObjects(greenSphere);
+        myScene->AddObjects(redSphere);
+        myScene->AddObjects(jupiter_sphere);
 
         // Add lights
-        myScene->AddLights(sunlight);
-//        myScene->AddLights(boxLight);
+//        myScene->AddLights(sunlight);
+//        myScene->AddLights(pointLight);
+        myScene->AddLights(boxLight);
 
         myScene->SetCamera(camera1());
 
@@ -108,8 +115,8 @@ public:
         auto* greenSphere = new Sphere(green_mat, Point(.6, 0, 0), .3);
 
         auto* blueBox = new AABox(blue_mat, Point(.2, .2, .2), Point(0, 0, 0));
-        auto* redBox = new AABox(red_mat, Point(0, 0, -.1), Point(.2,.2, -.03));
-        auto* redBoxLong = new AABox(red_mat, Point(-2, 0.1, -1), Point(2,.2, -.9));
+        auto* redBox = new AABox(red_solid, Point(0, 0, -.1), Point(.2, .2, -.03));
+        auto* redBoxLong = new AABox(red_solid, Point(-2, 0.1, -1), Point(2, .2, -.9));
 
         Point p0(100, -.4, -100);
         Point p1(-100, -.4, -100);
@@ -240,17 +247,17 @@ private:
     Color* whiteOut = new Color(6, 6, 6);
 
     //    create materials
-    Material* reflect_smooth = new Material(*white, *white, .5, .1, .4, 0, 0.04, 0, 10, 0);
-    Material* reflect_rough = new Material(*white, *white, .1, .1, .7, 0, 0.09, 0, 10, 0);
-    Material* red_mat = new Material(*red, *red, .8, .3, .2, 0, 0, 0, 6, 0);
-    Material* green_mat = new Material(*green, *white, .4, .5, 0, 0, 0, 0, 6, 0);
-    Material* blue_mat = new Material(*blue, *white, .2, .2, 0, .6, 0, 0, 6, 1.2);
-    Material* white_mat = new Material(*white, *white, .9, .1, 0, 0, 0, 0, 6, 0);
-    Material* refractive_smooth = new Material(*white, *white, .005, .5, .1, .8, 0, 0, 16, 1.3);
-    Material* refractive_rough = new Material(*white, *white, .005, .4, .1, .8, 0.09, .09, 8, 1.2);
+    Material* reflect_smooth = new Material(*white, *white, .5, .4, 0, .1, 0.04, 0, 10, 0);
+    Material* reflect_rough = new Material(*white, *white, .1, .7, 0, .1, 0.09, 0, 10, 0);
+    Material* red_solid = new Material(*red, *white, 1, 0, 0, .2, 0, 0, 6, 0);
+    Material* green_mat = new Material(*green, *white, .4, 0, 0, .2, 0, 0, 6, 0);
+    Material* blue_mat = new Material(*blue, *white, .2, 0, .6, .2, 0, 0, 6, 1.2);
+    Material* white_mat = new Material(*white, *white, .1, 0, 0, .1, 0, 0, 6, 0);
+    Material* refractive_smooth = new Material(*white, *white, .005, .1, .8, .2, 0, 0, 16, 1.3);
+    Material* refractive_rough = new Material(*white, *white, .005, .1, .8, .2, 0.09, .09, 8, 1.2);
 
-    Material* earth = new Material(*white, *white, .8, .1, 0, 0, 0.0, .0, 5, 1);
-    Material* jupiter = new Material(*white, *white, .8, .1, 0, 0, 0.0, .0, 5, 1);
+    Material* earth = new Material(*white, *white, .8, 0, 0, .1, 0.0, .0, 5, 1);
+    Material* jupiter = new Material(*white, *white, 1, 0, 0, .2, 0.0, .0, 5, 1);
 
 };
 
