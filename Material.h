@@ -22,7 +22,7 @@ public:
         this->spec_weight = spec_weight;
         this->fac_refl = fac_refl;
         this->fac_tran = fac_tran;
-        this->gloss = (gloss * 2) + 1;      // kind of a hack to keep from getting weird values in the glossiness calc. Dunno why it happens.
+        this->gloss = (gloss * 2) + 1;      // kind of a hack to keep from getting weird values in the glossiness calc.
         this->refrac_index = ior;
         this->refl_jit = jit_refl;
         this->tran_jit = jit_tran;
@@ -45,8 +45,9 @@ public:
         return colVal * light * dot * (1 - spec_weight);
     }
 
-
-    Color getSpec(double factor, Color light){
+    // leave for cel shader?
+    Color getSpec(double factor, Color light){  //FIXME: this does a bit for spheres...
+//        return {0, 0, 0};
         return light * specular * spec_weight * factor;
     }
 
@@ -101,20 +102,20 @@ public:
         std::string u_dim_string;
         std::string v_dim_string;
         std::string max_col_string;
-        std::cout << "filename is " << filename << "\n";
+//        std::cout << "filename is " << filename << "\n";
         std::ifstream ifs (texture_filename);
         if(ifs.is_open()){
             ifs >> title;
             ifs >> u_dim_string;
             ifs >> v_dim_string;
             ifs >> max_col_string;
-            std::cout << title << " " << u_dim_string << v_dim_string << " " << max_col_string << "\n";
+//            std::cout << title << " " << u_dim_string << v_dim_string << " " << max_col_string << "\n";
 
             u_dim = stoi(u_dim_string);
             v_dim = stoi(v_dim_string);
             max_col_val = stoi(max_col_string);
-            std::cout << "ints are " << u_dim << ", " << v_dim << std::endl;
-            std::cout << "max col val is " << max_col_val << std::endl;
+//            std::cout << "ints are " << u_dim << ", " << v_dim << std::endl;
+//            std::cout << "max col val is " << max_col_val << std::endl;
 
             ppmImage = new Color *[v_dim];          //set up image double array
             for (int i = 0; i < v_dim; i++) {

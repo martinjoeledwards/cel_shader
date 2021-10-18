@@ -6,8 +6,8 @@
 /* TODO:
  *  bounding volumes
  *  median split algorithm
- *
- *  extra: soft specular and diffuse? Powered specular and diffuse?
+ *  //FIXME: aabox is broken
+ *  use cosine attenuation for specular factor
 */
 //bounding box tree
 
@@ -52,8 +52,8 @@ int main() {
 
 
     SceneMaker sceneMaker;
-    Scene myScene = *sceneMaker.scene1();
-//    Scene myScene = *sceneMaker.scene2();
+//    Scene myScene = *sceneMaker.scene1();
+    Scene myScene = *sceneMaker.scene2();
 //    Scene myScene = *sceneMaker.scene3();
 //    Scene myScene = *sceneMaker.scene4();
 

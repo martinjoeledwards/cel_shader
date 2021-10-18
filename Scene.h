@@ -194,6 +194,7 @@ public:
                 Color reflected_color = GetPixelColor(reflected_ray, iters - 1);
                 return reflected_color;
             }
+            return Color(0);
         }
 
         else if (prob_sum == 2) {
@@ -205,7 +206,9 @@ public:
                 Color refracted_color = GetPixelColor(refracted_ray,iters - 1);  //FIXME fixed infinite recursion, I guess
                 return refracted_color;
             }
+            return Color(0);    // return no light calculated
         }
+        std::cout << "\nprob sum is " << prob_sum << std::endl;
         std::cout << "error in material: no light component calculated" << std::endl;
         exit(1);
     }
