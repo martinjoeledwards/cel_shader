@@ -53,10 +53,10 @@ RM = /cygdrive/c/Users/marti/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/RT.dir/depend.make
@@ -68,289 +68,289 @@ include CMakeFiles/RT.dir/flags.make
 
 CMakeFiles/RT.dir/raytracer.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/raytracer.cpp.o: ../raytracer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RT.dir/raytracer.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/raytracer.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/raytracer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/RT.dir/raytracer.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/raytracer.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/raytracer.cpp
 
 CMakeFiles/RT.dir/raytracer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/raytracer.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/raytracer.cpp > CMakeFiles/RT.dir/raytracer.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/raytracer.cpp > CMakeFiles/RT.dir/raytracer.cpp.i
 
 CMakeFiles/RT.dir/raytracer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/raytracer.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/raytracer.cpp -o CMakeFiles/RT.dir/raytracer.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/raytracer.cpp -o CMakeFiles/RT.dir/raytracer.cpp.s
 
 CMakeFiles/RT.dir/Color.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Color.cpp.o: ../Color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RT.dir/Color.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Color.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/RT.dir/Color.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Color.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.cpp
 
 CMakeFiles/RT.dir/Color.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Color.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.cpp > CMakeFiles/RT.dir/Color.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.cpp > CMakeFiles/RT.dir/Color.cpp.i
 
 CMakeFiles/RT.dir/Color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Color.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Color.cpp -o CMakeFiles/RT.dir/Color.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.cpp -o CMakeFiles/RT.dir/Color.cpp.s
 
 CMakeFiles/RT.dir/DataGrid.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/DataGrid.cpp.o: ../DataGrid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RT.dir/DataGrid.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/DataGrid.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/DataGrid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RT.dir/DataGrid.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/DataGrid.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.cpp
 
 CMakeFiles/RT.dir/DataGrid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/DataGrid.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/DataGrid.cpp > CMakeFiles/RT.dir/DataGrid.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.cpp > CMakeFiles/RT.dir/DataGrid.cpp.i
 
 CMakeFiles/RT.dir/DataGrid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/DataGrid.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/DataGrid.cpp -o CMakeFiles/RT.dir/DataGrid.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.cpp -o CMakeFiles/RT.dir/DataGrid.cpp.s
 
 CMakeFiles/RT.dir/Helpers.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Helpers.cpp.o: ../Helpers.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RT.dir/Helpers.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Helpers.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RT.dir/Helpers.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Helpers.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Helpers.cpp
 
 CMakeFiles/RT.dir/Helpers.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Helpers.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.cpp > CMakeFiles/RT.dir/Helpers.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Helpers.cpp > CMakeFiles/RT.dir/Helpers.cpp.i
 
 CMakeFiles/RT.dir/Helpers.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Helpers.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Helpers.cpp -o CMakeFiles/RT.dir/Helpers.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Helpers.cpp -o CMakeFiles/RT.dir/Helpers.cpp.s
 
 CMakeFiles/RT.dir/Ray.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Ray.cpp.o: ../Ray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RT.dir/Ray.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Ray.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RT.dir/Ray.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Ray.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Ray.cpp
 
 CMakeFiles/RT.dir/Ray.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Ray.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.cpp > CMakeFiles/RT.dir/Ray.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Ray.cpp > CMakeFiles/RT.dir/Ray.cpp.i
 
 CMakeFiles/RT.dir/Ray.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Ray.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Ray.cpp -o CMakeFiles/RT.dir/Ray.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Ray.cpp -o CMakeFiles/RT.dir/Ray.cpp.s
 
 CMakeFiles/RT.dir/Point.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Point.cpp.o: ../Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RT.dir/Point.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Point.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/RT.dir/Point.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Point.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Point.cpp
 
 CMakeFiles/RT.dir/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Point.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.cpp > CMakeFiles/RT.dir/Point.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Point.cpp > CMakeFiles/RT.dir/Point.cpp.i
 
 CMakeFiles/RT.dir/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Point.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Point.cpp -o CMakeFiles/RT.dir/Point.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Point.cpp -o CMakeFiles/RT.dir/Point.cpp.s
 
 CMakeFiles/RT.dir/Objects/Object.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Objects/Object.cpp.o: ../Objects/Object.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RT.dir/Objects/Object.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Object.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/RT.dir/Objects/Object.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Object.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Object.cpp
 
 CMakeFiles/RT.dir/Objects/Object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Object.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.cpp > CMakeFiles/RT.dir/Objects/Object.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Object.cpp > CMakeFiles/RT.dir/Objects/Object.cpp.i
 
 CMakeFiles/RT.dir/Objects/Object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Object.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Object.cpp -o CMakeFiles/RT.dir/Objects/Object.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Object.cpp -o CMakeFiles/RT.dir/Objects/Object.cpp.s
 
 CMakeFiles/RT.dir/Objects/Sphere.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Objects/Sphere.cpp.o: ../Objects/Sphere.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RT.dir/Objects/Sphere.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Sphere.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/RT.dir/Objects/Sphere.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Sphere.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Sphere.cpp
 
 CMakeFiles/RT.dir/Objects/Sphere.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Sphere.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.cpp > CMakeFiles/RT.dir/Objects/Sphere.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Sphere.cpp > CMakeFiles/RT.dir/Objects/Sphere.cpp.i
 
 CMakeFiles/RT.dir/Objects/Sphere.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Sphere.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Sphere.cpp -o CMakeFiles/RT.dir/Objects/Sphere.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Sphere.cpp -o CMakeFiles/RT.dir/Objects/Sphere.cpp.s
 
 CMakeFiles/RT.dir/Camera.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Camera.cpp.o: ../Camera.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RT.dir/Camera.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Camera.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/RT.dir/Camera.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Camera.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Camera.cpp
 
 CMakeFiles/RT.dir/Camera.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Camera.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.cpp > CMakeFiles/RT.dir/Camera.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Camera.cpp > CMakeFiles/RT.dir/Camera.cpp.i
 
 CMakeFiles/RT.dir/Camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Camera.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Camera.cpp -o CMakeFiles/RT.dir/Camera.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Camera.cpp -o CMakeFiles/RT.dir/Camera.cpp.s
 
 CMakeFiles/RT.dir/Material.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Material.cpp.o: ../Material.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RT.dir/Material.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Material.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/RT.dir/Material.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Material.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Material.cpp
 
 CMakeFiles/RT.dir/Material.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Material.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.cpp > CMakeFiles/RT.dir/Material.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Material.cpp > CMakeFiles/RT.dir/Material.cpp.i
 
 CMakeFiles/RT.dir/Material.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Material.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Material.cpp -o CMakeFiles/RT.dir/Material.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Material.cpp -o CMakeFiles/RT.dir/Material.cpp.s
 
 CMakeFiles/RT.dir/Scene.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Scene.cpp.o: ../Scene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RT.dir/Scene.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Scene.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Scene.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/RT.dir/Scene.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Scene.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Scene.cpp
 
 CMakeFiles/RT.dir/Scene.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Scene.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Scene.cpp > CMakeFiles/RT.dir/Scene.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Scene.cpp > CMakeFiles/RT.dir/Scene.cpp.i
 
 CMakeFiles/RT.dir/Scene.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Scene.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Scene.cpp -o CMakeFiles/RT.dir/Scene.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Scene.cpp -o CMakeFiles/RT.dir/Scene.cpp.s
 
 CMakeFiles/RT.dir/Objects/Plane.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Objects/Plane.cpp.o: ../Objects/Plane.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RT.dir/Objects/Plane.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Plane.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/RT.dir/Objects/Plane.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Plane.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Plane.cpp
 
 CMakeFiles/RT.dir/Objects/Plane.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Plane.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.cpp > CMakeFiles/RT.dir/Objects/Plane.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Plane.cpp > CMakeFiles/RT.dir/Objects/Plane.cpp.i
 
 CMakeFiles/RT.dir/Objects/Plane.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Plane.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Plane.cpp -o CMakeFiles/RT.dir/Objects/Plane.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Plane.cpp -o CMakeFiles/RT.dir/Objects/Plane.cpp.s
 
 CMakeFiles/RT.dir/Objects/Triangle.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Objects/Triangle.cpp.o: ../Objects/Triangle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RT.dir/Objects/Triangle.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Triangle.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Triangle.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/RT.dir/Objects/Triangle.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/Triangle.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Triangle.cpp
 
 CMakeFiles/RT.dir/Objects/Triangle.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/Triangle.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Triangle.cpp > CMakeFiles/RT.dir/Objects/Triangle.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Triangle.cpp > CMakeFiles/RT.dir/Objects/Triangle.cpp.i
 
 CMakeFiles/RT.dir/Objects/Triangle.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/Triangle.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/Triangle.cpp -o CMakeFiles/RT.dir/Objects/Triangle.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/Triangle.cpp -o CMakeFiles/RT.dir/Objects/Triangle.cpp.s
 
 CMakeFiles/RT.dir/UVPoint.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/UVPoint.cpp.o: ../UVPoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RT.dir/UVPoint.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/UVPoint.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/UVPoint.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/RT.dir/UVPoint.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/UVPoint.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/UVPoint.cpp
 
 CMakeFiles/RT.dir/UVPoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/UVPoint.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/UVPoint.cpp > CMakeFiles/RT.dir/UVPoint.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/UVPoint.cpp > CMakeFiles/RT.dir/UVPoint.cpp.i
 
 CMakeFiles/RT.dir/UVPoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/UVPoint.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/UVPoint.cpp -o CMakeFiles/RT.dir/UVPoint.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/UVPoint.cpp -o CMakeFiles/RT.dir/UVPoint.cpp.s
 
 CMakeFiles/RT.dir/Lights/Light.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Lights/Light.cpp.o: ../Lights/Light.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RT.dir/Lights/Light.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/Light.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/RT.dir/Lights/Light.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/Light.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/Light.cpp
 
 CMakeFiles/RT.dir/Lights/Light.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/Light.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.cpp > CMakeFiles/RT.dir/Lights/Light.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/Light.cpp > CMakeFiles/RT.dir/Lights/Light.cpp.i
 
 CMakeFiles/RT.dir/Lights/Light.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/Light.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/Light.cpp -o CMakeFiles/RT.dir/Lights/Light.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/Light.cpp -o CMakeFiles/RT.dir/Lights/Light.cpp.s
 
 CMakeFiles/RT.dir/Lights/SunLight.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Lights/SunLight.cpp.o: ../Lights/SunLight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RT.dir/Lights/SunLight.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/SunLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/SunLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/RT.dir/Lights/SunLight.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/SunLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/SunLight.cpp
 
 CMakeFiles/RT.dir/Lights/SunLight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/SunLight.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/SunLight.cpp > CMakeFiles/RT.dir/Lights/SunLight.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/SunLight.cpp > CMakeFiles/RT.dir/Lights/SunLight.cpp.i
 
 CMakeFiles/RT.dir/Lights/SunLight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/SunLight.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/SunLight.cpp -o CMakeFiles/RT.dir/Lights/SunLight.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/SunLight.cpp -o CMakeFiles/RT.dir/Lights/SunLight.cpp.s
 
 CMakeFiles/RT.dir/Lights/PointLight.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Lights/PointLight.cpp.o: ../Lights/PointLight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RT.dir/Lights/PointLight.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/PointLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/PointLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/RT.dir/Lights/PointLight.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/PointLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/PointLight.cpp
 
 CMakeFiles/RT.dir/Lights/PointLight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/PointLight.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/PointLight.cpp > CMakeFiles/RT.dir/Lights/PointLight.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/PointLight.cpp > CMakeFiles/RT.dir/Lights/PointLight.cpp.i
 
 CMakeFiles/RT.dir/Lights/PointLight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/PointLight.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/PointLight.cpp -o CMakeFiles/RT.dir/Lights/PointLight.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/PointLight.cpp -o CMakeFiles/RT.dir/Lights/PointLight.cpp.s
 
 CMakeFiles/RT.dir/Objects/AABox.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Objects/AABox.cpp.o: ../Objects/AABox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RT.dir/Objects/AABox.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/AABox.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/AABox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/RT.dir/Objects/AABox.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Objects/AABox.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/AABox.cpp
 
 CMakeFiles/RT.dir/Objects/AABox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Objects/AABox.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/AABox.cpp > CMakeFiles/RT.dir/Objects/AABox.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/AABox.cpp > CMakeFiles/RT.dir/Objects/AABox.cpp.i
 
 CMakeFiles/RT.dir/Objects/AABox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Objects/AABox.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Objects/AABox.cpp -o CMakeFiles/RT.dir/Objects/AABox.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/AABox.cpp -o CMakeFiles/RT.dir/Objects/AABox.cpp.s
 
 CMakeFiles/RT.dir/Lights/BoxLight.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Lights/BoxLight.cpp.o: ../Lights/BoxLight.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RT.dir/Lights/BoxLight.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/BoxLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/BoxLight.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/RT.dir/Lights/BoxLight.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Lights/BoxLight.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/BoxLight.cpp
 
 CMakeFiles/RT.dir/Lights/BoxLight.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Lights/BoxLight.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/BoxLight.cpp > CMakeFiles/RT.dir/Lights/BoxLight.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/BoxLight.cpp > CMakeFiles/RT.dir/Lights/BoxLight.cpp.i
 
 CMakeFiles/RT.dir/Lights/BoxLight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Lights/BoxLight.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Lights/BoxLight.cpp -o CMakeFiles/RT.dir/Lights/BoxLight.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Lights/BoxLight.cpp -o CMakeFiles/RT.dir/Lights/BoxLight.cpp.s
 
 CMakeFiles/RT.dir/Random.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Random.cpp.o: ../Random.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/RT.dir/Random.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Random.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Random.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/RT.dir/Random.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Random.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Random.cpp
 
 CMakeFiles/RT.dir/Random.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Random.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Random.cpp > CMakeFiles/RT.dir/Random.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Random.cpp > CMakeFiles/RT.dir/Random.cpp.i
 
 CMakeFiles/RT.dir/Random.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Random.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Random.cpp -o CMakeFiles/RT.dir/Random.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Random.cpp -o CMakeFiles/RT.dir/Random.cpp.s
 
 CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o: ../Bounding/BoundingBox.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Bounding/BoundingBox.cpp
 
 CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.cpp > CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Bounding/BoundingBox.cpp > CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.i
 
 CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/BoundingBox.cpp -o CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Bounding/BoundingBox.cpp -o CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.s
 
 CMakeFiles/RT.dir/Bounding/Node.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Bounding/Node.cpp.o: ../Bounding/Node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/RT.dir/Bounding/Node.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Bounding/Node.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/Node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/RT.dir/Bounding/Node.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Bounding/Node.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Bounding/Node.cpp
 
 CMakeFiles/RT.dir/Bounding/Node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Bounding/Node.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/Node.cpp > CMakeFiles/RT.dir/Bounding/Node.cpp.i
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Bounding/Node.cpp > CMakeFiles/RT.dir/Bounding/Node.cpp.i
 
 CMakeFiles/RT.dir/Bounding/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Bounding/Node.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/Bounding/Node.cpp -o CMakeFiles/RT.dir/Bounding/Node.cpp.s
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Bounding/Node.cpp -o CMakeFiles/RT.dir/Bounding/Node.cpp.s
 
 # Object files for target RT
 RT_OBJECTS = \
@@ -404,7 +404,7 @@ RT.exe: CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o
 RT.exe: CMakeFiles/RT.dir/Bounding/Node.cpp.o
 RT.exe: CMakeFiles/RT.dir/build.make
 RT.exe: CMakeFiles/RT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable RT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Linking CXX executable RT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -416,6 +416,6 @@ CMakeFiles/RT.dir/clean:
 .PHONY : CMakeFiles/RT.dir/clean
 
 CMakeFiles/RT.dir/depend:
-	cd /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles/RT.dir/DependInfo.cmake --color=$(COLOR)
+	cd /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles/RT.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/RT.dir/depend
 

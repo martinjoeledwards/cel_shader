@@ -54,10 +54,10 @@ RM = /cygdrive/c/Users/marti/AppData/Local/JetBrains/CLion2021.2/cygwin_cmake/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer
+CMAKE_SOURCE_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug
+CMAKE_BINARY_DIR = /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/RT.dir/clean
 CMakeFiles/RT.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target RT"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23 "Built target RT"
 .PHONY : CMakeFiles/RT.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RT.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles 23
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/RT.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/Octradic_Raytracer/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/RT.dir/rule
 
 # Convenience name for target.
