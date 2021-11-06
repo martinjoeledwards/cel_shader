@@ -17,7 +17,7 @@ public:
         int indirect_samples = 1;
         bool rayJitter = false;
 
-        auto x_dim = 320u;       //default 320u
+        auto x_dim = 880u;       //default 320u
         auto y_dim = x_dim / aspect_ratio; //240p
         double fov = 140.0;
 
@@ -67,7 +67,7 @@ public:
         myScene->AddObjects(earth_sphere);
         myScene->AddObjects(moon);
         myScene->AddObjects(moon2);
-        myScene->AddObjects(moon3);
+//        myScene->AddObjects(moon3);
 
         //         Add lights
         myScene->AddLights(pointLight);

@@ -6,9 +6,14 @@
 #define RT_DISTGRID_H
 
 
+#include "NormalGrid.h"
+
 class DistGrid {
 public:
     DistGrid(unsigned int x_dim, unsigned int y_dim);
+
+    DistGrid(NormalGrid grid);
+
     unsigned int getXDim();
     unsigned int getYDim();
     double get(unsigned int x, unsigned int y);

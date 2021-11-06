@@ -42,8 +42,12 @@ CMakeFiles/RT.dir/Grids/DataGrid.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Point.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/UVPoint.h
 CMakeFiles/RT.dir/Grids/DistGrid.cpp.o
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DistGrid.cpp
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DistGrid.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Point.h
+ /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/UVPoint.h
 CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.h
  /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.cpp

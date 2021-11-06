@@ -13,8 +13,22 @@ DistGrid::DistGrid(unsigned int in_x_dim, unsigned in_y_dim) {
     for (int i = 0; i < x_dim; i++) {
         image_grid[i] = new double[y_dim];
     }
+}
 
+DistGrid::DistGrid(NormalGrid grid) {
+    x_dim = grid.getXDim();
+    y_dim = grid.getYDim();
 
+    image_grid = new double *[x_dim];
+    for (int i = 0; i < x_dim; i++) {
+        image_grid[i] = new double[y_dim];
+    }
+
+    for(int i = 1; i < y_dim - 1; i++){
+        for (int j = 1; j < x_dim - 1; j++){
+            image_grid[j][i] = grid.get(j, i).x;
+        }
+    }
 }
 
 unsigned int DistGrid::getXDim() {
@@ -91,7 +105,7 @@ void DistGrid::quantize(double d) {
             if(image_grid[j][i] < d) {      // no edge
                 image_grid[j][i] = 0;
             } else {
-                image_grid[j][i] = 1;       // edge
+                image_grid[j][i] = 255;       // edge
             }
         }
     }

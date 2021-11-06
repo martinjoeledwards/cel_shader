@@ -42,8 +42,12 @@ CMakeFiles/RT.dir/Grids/DataGrid.cpp.o: \
  ../Point.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Grids/DistGrid.cpp.o: \
+ ../Color.h \
  ../Grids/DistGrid.cpp \
- ../Grids/DistGrid.h
+ ../Grids/DistGrid.h \
+ ../Grids/NormalGrid.h \
+ ../Point.h \
+ ../UVPoint.h
 CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o: \
  ../Color.h \
  ../Grids/NormalGrid.cpp \

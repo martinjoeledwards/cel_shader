@@ -118,7 +118,7 @@ public:
     }
 
     Point getNormalMulti(unsigned int i, unsigned int j){
-        auto total = Point(0, 0, 0);
+        auto total = Point(0, 1, 0);
         std::vector<Ray> inRays = myCamera->getRayList(i, j);
         for(Ray curr_ray : inRays){
             Point aggregate = GetPointNormal(curr_ray);
@@ -127,7 +127,7 @@ public:
             total = total + aggregate;
         }
         total = total / (double)inRays.size();
-        norm(total).Print();
+//        norm(total).Print();
         return norm(total);
     }
     double getDistMulti(unsigned int i, unsigned int j){
@@ -217,7 +217,7 @@ public:
 
 //                diff_col_looped += closest->myMat->getFullDiff(curr_light->getColor(), dot_val, refl_fac, u, v);
 //                if(dot_val > 0)
-                double q_vals[] = {.3, .6, .9};
+                double q_vals[] = {.3, .75, .9};
                 int size = 3;
                 double olddot = dot_val;
                 for(int z = 0; z < size; z++){

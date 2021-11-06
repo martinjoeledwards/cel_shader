@@ -76,7 +76,7 @@ DataGrid::DataGrid(DistGrid inGrid) {
 void DataGrid::addEdges(DistGrid grid) {
     for(int i = 0; i < x_dim; i++){
         for (int j = 0; j < y_dim; j++){
-            if(grid.get(i, j) == 1){
+            if(grid.get(i, j) == 255){
                 image_grid[i][j] = Color(0.0);
             }
 

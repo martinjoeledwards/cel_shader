@@ -19,7 +19,13 @@ public:
 
     void colorize();
 
-private:
+    void quantize(double d);
+
+    void detectEdges();
+    Point multiply(double *box, Point **grid, int i, int j);
+
+
+        private:
     unsigned int x_dim{};
     unsigned int y_dim{};
 

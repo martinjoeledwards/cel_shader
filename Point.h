@@ -18,6 +18,13 @@ struct Point {
         y = iny;
         z = inz;
     }
+
+    Point(Point const &inP){
+        x = inP.x;
+        y = inP.y;
+        z = inP.z;
+    }
+
     double x, y, z;
 
     Point operator+ (const Point& p) {
@@ -61,6 +68,34 @@ struct Point {
         point.z = this->z * d;
 //        point.Print();
         return point;
+    }
+
+    Point operator* (const Point& p){
+        Point point;
+        point.x = this->x * p.x;
+        point.y = this->x * p.y;
+        point.z = this->x * p.z;
+        return point;
+    }
+
+    Point square(){
+        Point point;
+        point.x = pow(this->x, 2);
+        point.y = pow(this->y, 2);
+        point.z = pow(this->z, 2);
+        this->x = point.x;
+        this->y = point.y;
+        this->z = point.z;
+        return point;
+//        this->x *= this->x;
+//        this->y *= this->y;
+//        this->z *= this->z;
+    }
+
+    void root(){
+        this->x = sqrt(x);
+        this->y = sqrt(y);
+        this->z = sqrt(z);
     }
 
     Point operator/ (const double& d){

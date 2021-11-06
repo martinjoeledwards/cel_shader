@@ -113,20 +113,25 @@ int main() {
         }
     }
 
-    normGrid.colorize();
-    DataGrid normalMap = DataGrid(normGrid);
+//    normGrid.colorize();
+    normGrid.detectEdges();
+    normGrid.quantize(6);
+    DistGrid normalDoubleGrid(normGrid);
+
+    DataGrid normalMap = DataGrid(normalDoubleGrid);
 
     distGrid.detectEdges();
     distGrid.quantize(.5);
-    DataGrid finalGrid = DataGrid(distGrid);
+    DataGrid distanceOutGrid = DataGrid(distGrid);
 
 //    myGrid.addEdges(distGrid);
+    myGrid.addEdges(normalDoubleGrid);
 
     my_prog.print_finish();
 
-    normalMap.save_image();
-//    finalGrid.save_image();
-//    myGrid.save_image();
+//    normalMap.save_image();
+//    distanceOutGrid.save_image();
+    myGrid.save_image();
 
     return 0;
 }
