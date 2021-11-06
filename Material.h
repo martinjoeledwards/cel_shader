@@ -36,24 +36,27 @@ public:
     }
 
     Color getDiff(double dot, Color light, double u, double v){
+//        if(dot <= 0) return Color(0);   //check for correct angle
+
         if(u == -1 || v == -1){
             return diffuse * light * dot;
         }
         int u_coord = floor(u * (double)u_dim);
         int v_coord = floor(v * (double)v_dim);
         Color colVal = ppmImage[v_coord][u_coord];
-        return colVal * light * dot * (1 - spec_weight);
+        return colVal * light * dot;
+//        return colVal * light * dot * (1 - spec_weight);
     }
 
     // leave for cel shader?
     Color getSpec(double factor, Color light){  //FIXME: this does a bit for spheres...
 //        return {0, 0, 0};
-        return light * specular * spec_weight * factor;
+        if(factor <= 0)
+            return Color(0);
+        return light * specular * factor;
+//        return light * specular * spec_weight * factor;
     }
 
-//    Color getDiffColor(){
-//        if(usesTex) return {0, 1, 0};   //error: not using texture.
-//        return diffuse;
 //    }
 
 
@@ -67,13 +70,16 @@ public:
         return colVal * fac_diff; // so that transparent objs don't take much color
     }
 
+    // FIXME:
+    // diffuse should return 1 color
+    // specular should pass some threshold
     Color getFullDiff(Color light_col, double dot_val, double refl_fac, double u, double v){
         if(dot_val > 0) {
             Color diff = getDiff(dot_val, light_col, u, v);
             Color spec(0, 0, 0);
-            if (refl_fac > 0) {
-                spec = getSpec(refl_fac, light_col);
-            }
+//            if (refl_fac > 0) {
+            spec = getSpec(refl_fac, light_col);
+//            }
             return diff + spec;
         }
         return {0, 0, 0};
@@ -141,16 +147,6 @@ public:
             std::cout << "file didn't open.\n";
             exit(1);
         }
-    }
-    int getPath(){
-        double prob_sum = fac_diff + fac_refl + fac_tran;
-        double random = getRandDouble(0, prob_sum);
-        if(random < (fac_diff)){
-            return 0;
-        } else if (random < fac_diff + fac_refl) {
-            return 1;
-        }
-        return 2;
     }
 
 private:

@@ -146,6 +146,12 @@
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Material.h">
 			<Option target="RT"/>
 		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/NormalGrid.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/NormalGrid.h">
+			<Option target="RT"/>
+		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/AABox.cpp">
 			<Option target="RT"/>
 		</Unit>

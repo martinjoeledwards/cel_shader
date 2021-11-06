@@ -4,10 +4,9 @@
 //
 
 /* TODO:
- *  bounding volumes
- *  median split algorithm
- *  //FIXME: aabox is broken
- *  use cosine attenuation for specular factor
+ *  create objects for distance and normal maps
+ *  generate outlines from distance and normal maps
+ *  combine color and outlines for final image
 */
 //bounding box tree
 
@@ -44,7 +43,7 @@ void renderRow(Scene myScene, DataGrid myGrid, int j, int x_dim){
 
 int main() {
     //Welcome statement
-    std::cout << "Welcome to Martin's fabulous Ray tracer!" << std::endl;
+    std::cout << "Welcome to Martin's fabulous cel shading ray tracer!" << std::endl;
 
 
 ////    threading stuff
@@ -64,6 +63,7 @@ int main() {
     Progress my_prog(y_dim);
 
     DataGrid myGrid(x_dim, y_dim);
+    NormalGrid normGrid(x_dim, y_dim);
 
     if (multiThreading) {
 

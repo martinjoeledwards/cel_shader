@@ -393,6 +393,30 @@ Material.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Material.cpp.s
 .PHONY : Material.cpp.s
 
+NormalGrid.o: NormalGrid.cpp.o
+.PHONY : NormalGrid.o
+
+# target to build an object file
+NormalGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/NormalGrid.cpp.o
+.PHONY : NormalGrid.cpp.o
+
+NormalGrid.i: NormalGrid.cpp.i
+.PHONY : NormalGrid.i
+
+# target to preprocess a source file
+NormalGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/NormalGrid.cpp.i
+.PHONY : NormalGrid.cpp.i
+
+NormalGrid.s: NormalGrid.cpp.s
+.PHONY : NormalGrid.s
+
+# target to generate assembly for a file
+NormalGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/NormalGrid.cpp.s
+.PHONY : NormalGrid.cpp.s
+
 Objects/AABox.o: Objects/AABox.cpp.o
 .PHONY : Objects/AABox.o
 
@@ -699,6 +723,9 @@ help:
 	@echo "... Material.o"
 	@echo "... Material.i"
 	@echo "... Material.s"
+	@echo "... NormalGrid.o"
+	@echo "... NormalGrid.i"
+	@echo "... NormalGrid.s"
 	@echo "... Objects/AABox.o"
 	@echo "... Objects/AABox.i"
 	@echo "... Objects/AABox.s"

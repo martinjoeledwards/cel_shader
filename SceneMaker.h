@@ -8,54 +8,21 @@
 class SceneMaker {
 public:
 
-    Camera* camera1(){
-
-        double aspect_ratio = 16.0 / 9.0;
-
-        int sampleSubdiv = 1;
-        int samples = 512;
-        int indirect_samples = 4;
-        bool rayJitter = true;
-
-        auto x_dim = 640u;       //default 320
-        auto y_dim = x_dim / aspect_ratio; //240p
-        double fov = 140.0;
-
-        int num_bounces = 4;
-        int shadowSamples = 8;
-
-
-        Point cam_from(0, 1, 4);
-        Point cam_at(0, 0, 0);
-        Point cam_up(0, 1, 0);
-
-        auto myCamera = new Camera(x_dim, aspect_ratio, fov, cam_from, cam_at, cam_up);
-        myCamera->setRayJitter(rayJitter);
-        myCamera->setSampleSubdiv(sampleSubdiv);
-        myCamera->setSamples(samples);
-        myCamera->setNumBounces(num_bounces);
-        myCamera->setShadowSamples(shadowSamples);
-        myCamera->setIndirectSamples(indirect_samples);
-
-        return myCamera;
-
-    }
-
     Camera* camera2(){
 
         double aspect_ratio = 16.0 / 9.0;
 
         int sampleSubdiv = 1;
-        int samples = 1024;
-        int indirect_samples = 8;
-        bool rayJitter = true;
+        int samples = 1;
+        int indirect_samples = 1;
+        bool rayJitter = false;
 
         auto x_dim = 640u;       //default 320
         auto y_dim = x_dim / aspect_ratio; //240p
         double fov = 140.0;
 
-        int num_bounces = 4;
-        int shadowSamples = 4;
+        int num_bounces = 0;
+        int shadowSamples = 1;
 
 
         Point cam_from(0, .5, 4);
@@ -73,62 +40,24 @@ public:
         return myCamera;
     }
 
-    Scene* scene1(){
-//    create objects
-        jupiter->setTexture("Textures/jupiter.ppm");
-        earth->setTexture("Textures/earth.ppm");
-        auto* white_plane = new Plane(white_mat, Point(0, 1, 0), -.2);
-        auto* green_plane = new Plane(green_mat, Point(1, 0, .2), -4);
-        auto* blue_plane = new Plane(blue_mat, Point(-1, 0, .2), -4);
-        auto* red_plane = new Plane(red_mat, Point(0, 0, 1), -.4);
-        auto earth_sphere = new Sphere(earth, Point(0, .4, 1), .6);
-        auto tran_sphere = new Sphere(refractive_smooth, Point(1.2, .2, 1.2), .4);
-        auto refl_sphere = new Sphere(reflect_smooth, Point(-1.2, .2, 1.2), .4);
-
-//    create lights
-        auto boxLight = new BoxLight(Color(.7), Point(3, 2, 4), Point(3.4, 2.4, 4.4));
-
-//        create scene and set rendering values
-        auto global_light = Color(.3);
-        auto myScene = new Scene(global_light);
-
-//          Add objects
-
-        myScene->AddObjects(white_plane);
-        myScene->AddObjects(green_plane);
-        myScene->AddObjects(red_plane);
-        myScene->AddObjects(blue_plane);
-        myScene->AddObjects(earth_sphere);
-        myScene->AddObjects(tran_sphere);
-        myScene->AddObjects(refl_sphere);
-
- //         Add lights
-        myScene->AddLights(boxLight);
-
-        myScene->SetCamera(camera1());
-
-//        initialize bounding box hierarchy
-//        myScene->initialize();
-
-        return myScene;
-    }
-
     Scene* scene2(){
 //    create objects
         jupiter->setTexture("Textures/jupiter.ppm");
         earth_ref->setTexture("Textures/2k_earth.ppm");
-        auto refl_plane = new Plane(reflect_rough, Point(.4, 1, .3), -2);
+        auto refl_plane = new Plane(white_diffuse, Point(.4, 1, .3), -2);
         auto jupiter_sphere = new Sphere(jupiter, Point(0, 0, -5), 4);
         auto earth_sphere = new Sphere(earth_ref, Point(1, -.8, .4), .6);
-        auto moon = new Sphere(moon_mat, Point(1, 1, -.5), .2);
-        auto moon2 = new Sphere(blue_mat, Point(-.2, .6, -.3), .25);
-        auto moon3 = new Sphere(red_mat, Point(4.4, .2, -3.6), .3);
+        auto moon = new Sphere(red_diffuse, Point(1, 1, -.5), .2);
+        auto moon2 = new Sphere(blue_diffuse, Point(-.2, .6, -.3), .25);
+        auto moon3 = new Sphere(yellow_diffuse, Point(4.4, .2, -3.6), .3);
 
 //    create lights
-        auto boxLight = new BoxLight(Color(.9), Point(5, 3, 5), Point(6, 4, 6));
-
+//        auto boxLight = new BoxLight(Color(.9), Point(5, 3, 5), Point(6, 4, 6));
+        auto pointLight = new PointLight(Color(.9), Point(50, 30, 50));
 //        create scene and set rendering values
         auto global_light = Color(.1);
+        auto sunLight = new SunLight(Color(.9), Point(1, .5, 2));
+        //FIXME: sun light seems to be breaking shadows with jupiter.
         auto myScene = new Scene(global_light);
 
 //          Add objects
@@ -141,94 +70,12 @@ public:
         myScene->AddObjects(moon3);
 
         //         Add lights
-        myScene->AddLights(boxLight);
+        myScene->AddLights(pointLight);
 
         myScene->SetCamera(camera2());
 
 //        initialize bounding box hierarchy
 //        myScene->initialize();
-
-        return myScene;
-    }
-
-    Scene* scene3(){
-        int num_bounces = 3;        //TODO: move these two to the camera class? And give scene a camera member?
-        int shadowSamples = 32;
-
-
-//    create objects
-        earth->setTexture("Textures/2k_earth.ppm");
-        jupiter->setTexture("Textures/jupiter.ppm");
-
-        auto* refrSphere = new Sphere(earth, Point(-1, .2, .3), 1);
-
-        Point p0(0, 0, 0);
-        Point p1(3, 0, 0);
-        Point p2(1.5, .6, -2);
-        auto* tri = new Triangle(jupiter, p0, p1, p2);
-        auto* diff_plane = new Plane(reflect_rough, Point(0, 1, 0), -.8);
-
-//    create lights
-        auto boxLight = new BoxLight(*white, Point(.8, 1.4, 0), Point(1, 1.6, .2));
-        auto sunLight = new SunLight(*white, Point(.1, .3, 1));
-
-//        create scene and set rendering values
-        auto* myScene = new Scene();
-//        myScene->setNumBounces(num_bounces);
-//        myScene->setShadowSamples(shadowSamples);
-
-// Add objects
-
-        myScene->AddObjects(diff_plane);
-        myScene->AddObjects(refrSphere);
-        myScene->AddObjects(tri);
-
-        // Add lights
-        myScene->AddLights(boxLight);
-        myScene->AddLights(sunLight);
-
-        myScene->initialize();
-
-        return myScene;
-    }
-
-    Scene* scene4(){
-        int num_bounces = 3;        //TODO: move these two to the camera class? And give scene a camera member?
-        int shadowSamples = 32;
-
-
-//    create objects
-        earth->setTexture("Textures/2k_earth.ppm");
-        jupiter->setTexture("Textures/jupiter.ppm");
-
-        auto* refrSphere = new Sphere(jupiter, Point(-1, .2, .3), 1);
-
-        Point p0(0, 0, 0);
-        Point p1(3, 0, 0);
-        Point p2(1.5, .6, -2);
-        auto* tri = new Triangle(earth, p0, p1, p2);
-        auto* diff_plane = new Plane(reflect_rough, Point(0, 1, 0), -.8);
-
-//    create lights
-        auto boxLight = new BoxLight(*white, Point(.8, 1.4, 0), Point(1, 1.6, .2));
-        auto sunLight = new SunLight(*white, Point(.1, .3, 1));
-
-//        create scene and set rendering values
-        auto* myScene = new Scene();
-//        myScene->setNumBounces(num_bounces);
-//        myScene->setShadowSamples(shadowSamples);
-
-// Add objects
-
-        myScene->AddObjects(diff_plane);
-        myScene->AddObjects(refrSphere);
-        myScene->AddObjects(tri);
-
-        // Add lights
-        myScene->AddLights(boxLight);
-        myScene->AddLights(sunLight);
-
-        myScene->initialize();
 
         return myScene;
     }
@@ -241,8 +88,15 @@ private:
     Color* white = new Color(1, 1, 1);
     Color* superWhite = new Color(5, 5, 5);
     Color* moon_col = new Color(.5, .5, .6);
+    Color* yellow = new Color(1, 1, 0);
 
     //    create materials
+    double ds_fac = .7;
+    Material* red_diffuse = new Material(*red, *white, 1, 0, 0, ds_fac, 0, 0, 7, 0);
+    Material* blue_diffuse = new Material(*blue, *white, 1, 0, 0, ds_fac, 0, 0, 7, 0);
+    Material* yellow_diffuse = new Material(*yellow, *white, 1, 0, 0, ds_fac, 0, 0, 7, 0);
+    Material* white_diffuse = new Material(*white, *white, 1, 0, 0, ds_fac, 0, 0, 7, 0);
+
     Material* reflect_smooth = new Material(*white, *white, .3, .7, 0, 0, 0.0, 0, 10, 0);
     Material* reflect_rough = new Material(*white, *white, .2, .6, 0, 0, 0.05, 0, 10, 0);
     Material* red_mat = new Material(*red, *white, 1, 0, 0, 0, 0, 0, 6, 0);

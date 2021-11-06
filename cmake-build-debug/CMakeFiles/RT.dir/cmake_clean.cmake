@@ -10,6 +10,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/RT.dir/Lights/PointLight.cpp.o"
   "CMakeFiles/RT.dir/Lights/SunLight.cpp.o"
   "CMakeFiles/RT.dir/Material.cpp.o"
+  "CMakeFiles/RT.dir/NormalGrid.cpp.o"
   "CMakeFiles/RT.dir/Objects/AABox.cpp.o"
   "CMakeFiles/RT.dir/Objects/Object.cpp.o"
   "CMakeFiles/RT.dir/Objects/Plane.cpp.o"

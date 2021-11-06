@@ -99,6 +99,18 @@ struct Color {
     double r;
     double g;
     double b;
+
+    void normalize() {
+        double r2 = r * r;
+        double g2 = g * g;
+        double b2 = b * b;
+        double sum = r2 + g2 + b2;
+        double root = sqrt(sum);
+        r = r / root;
+        g = g / root;
+        b = b / root;
+
+    }
 };
 
 

@@ -76,7 +76,7 @@ public:
     }
 
     // Returns 1 if completely in shadow. Returns 0 if completely lit.
-    double getShadowFactor(Point in_point, Light *in_light){
+    double getShadowFactor(Object* closest, Point in_point, Light *in_light){
         if (typeid(BoxLight) == typeid(*in_light)) {   // if boxlight, run multiple samples. Later: extend to area light class
             double shadowFac = 0;
             for (int i = 0; i < myCamera->getShadowSamples(); i++) {
@@ -98,6 +98,7 @@ public:
             Object *shadowObj = shadow.first;
             double shadowObjDist = shadow.second;
 
+            if (shadowObj == closest) return 0;     //no shadow on self objects
             if (shadowObj != nullptr && light_hit.second > shadowObjDist) {
                 return 1;
             }
@@ -116,7 +117,7 @@ public:
         return total.clip();        // clips to light value of 1
     }
 
-    Color GetPixelColor(Ray inRay, int iters){      //FIXME: use spherical stuff for diffuse color
+    Color GetPixelColor(Ray inRay, int iters){
 
         double lowest_t;
 
@@ -133,84 +134,73 @@ public:
 
         Material currMat = *(closest->myMat);
 
-        int prob_sum = currMat.getPath();
+        double u = -1;
+        double v = -1;
+        if (closest->myMat->hasTex()) {
+            closest->setUV(hit_point, &u, &v);
+        }
 
-        if(prob_sum == 0) {
-            double u = -1;
-            double v = -1;
-            if (closest->myMat->hasTex()) {
-                closest->setUV(hit_point, &u, &v);
-            }
+        Color all_light(0, 0, 0);
 
-            Color all_light(0, 0, 0);
+        //calculate direct illumination
+        for (auto curr_light: lights) {
 
-            Color diff_spec = Color(0, 0, 0);
-            //calculate direct illumination
-            for (auto curr_light: lights) {
+            double shadowFactor = getShadowFactor(closest, float_point, curr_light);
 
-                double shadowFactor = getShadowFactor(float_point, curr_light);
+            Color diff_col_looped(0);
+            Color shadow_color(0);
+            for(int k = 0; k < myCamera->getShadowSamples(); k++ ){   // loop here for jittered samples!
+                Point direction = curr_light->getDirection(hit_point);
 
-                Color diff_col_looped(0);
-                for(int k = 0; k < myCamera->getShadowSamples(); k++ ){   // loop here for jittered samples!
-                    Point direction = curr_light->getDirection(hit_point);
+                Point refl_vec =
+                        (surf_norm * dot(direction, surf_norm) * 2) - direction;  //get reflection direction
+                double refl_fac = pow(dot(direction, refl_vec), currMat.getGloss());
 
-                    Point refl_vec =
-                            (surf_norm * dot(direction, surf_norm) * 2) - direction;  //get reflection direction
-                    double refl_fac = pow(dot(direction, refl_vec), currMat.getGloss());
+                double dot_val = dot(direction, surf_norm);
 
-                    double dot_val = dot(direction, surf_norm);
-
-                    diff_col_looped += closest->myMat->getFullDiff(curr_light->getColor(), dot_val, refl_fac, u, v);
+//                diff_col_looped += closest->myMat->getFullDiff(curr_light->getColor(), dot_val, refl_fac, u, v);
+//                if(dot_val > 0)
+                double q_vals[] = {.3, .6, .9};
+                int size = 3;
+                double olddot = dot_val;
+                for(int z = 0; z < size; z++){
+                    if (dot_val < q_vals[z]){
+                        dot_val = q_vals[z];
+                        break;
+                    }
+                    if(z == size - 1){
+                        dot_val = q_vals[z];
+                    }
                 }
-                diff_col_looped /= myCamera->getShadowSamples();
 
-                all_light += diff_col_looped * Color(1 - shadowFactor);
-            }
 
-            //calculate indirect illumination
-            Color indirect(0, 0, 0);
-            if(iters > 0) {
-                for (int i = 0; i < myCamera->getIndirectSamples(); i++) {
-                    Point newDir = randNormalJitter(surf_norm);
-                    Ray indirect_ray(hit_point + (newDir * shift_amount), newDir);
-                    Color indirect_col = GetPixelColor(indirect_ray, 0);    //only allow 1 bounce for now
-
-//                    indirect += indirect_col * dot(surf_norm, newDir); // takes angle into account
-                    indirect += indirect_col; // doesn't.
+                if(refl_fac < .8) {     //quantize the specular value
+                    refl_fac = 0;
+                } else {
+                    refl_fac = .9;
                 }
-            }
-            indirect /= myCamera->getIndirectSamples();
-            all_light +=  indirect * currMat.getDiffColor(u, v);
+                double shadow_power = .2;
 
-            return all_light;
+                shadow_color += closest->myMat->getDiff(shadow_power,curr_light->getColor(), u, v);
+                diff_col_looped += closest->myMat->getDiff(dot_val,curr_light->getColor(), u, v);
+                diff_col_looped += closest->myMat->getSpec(refl_fac,curr_light->getColor());
+            }
+            shadow_color /= myCamera->getShadowSamples();
+            diff_col_looped /= myCamera->getShadowSamples();
+
+//            diff_col_looped.normalize();      //these produce a washed-out kinda look
+//            diff_col_looped = diff_col_looped * 3;
+
+//            all_light += diff_col_looped;
+            if(shadowFactor > .5){
+                all_light += shadow_color;
+            } else {
+                all_light += diff_col_looped;
+            }
+//            all_light += diff_col_looped * Color(1 - shadowFactor);
         }
 
-        else if (prob_sum == 1) {
-            if(iters > 0){     // if bounces aren't maxed out
-                Point reflected_vec = reflect_vector(inRay.getDir(), surf_norm);
-                reflected_vec = jitter_vector(reflected_vec, currMat.getReflJit());
-                Ray reflected_ray(hit_point + (reflected_vec * shift_amount), reflected_vec);
-
-                Color reflected_color = GetPixelColor(reflected_ray, iters - 1);
-                return reflected_color;
-            }
-            return Color(0);
-        }
-
-        else if (prob_sum == 2) {
-//        refraction
-            if (iters > 0){
-                Point refracted_vec = refract_vec(currMat.getIOR(), inRay.getDir(), surf_norm);
-                refracted_vec = jitter_vector(refracted_vec, currMat.getTranJit());
-                Ray refracted_ray(hit_point + (refracted_vec * shift_amount), refracted_vec);
-                Color refracted_color = GetPixelColor(refracted_ray,iters - 1);  //FIXME fixed infinite recursion, I guess
-                return refracted_color;
-            }
-            return Color(0);    // return no light calculated
-        }
-        std::cout << "\nprob sum is " << prob_sum << std::endl;
-        std::cout << "error in material: no light component calculated" << std::endl;
-        exit(1);
+        return all_light;
     }
 
     void SetCamera(Camera *pCamera){
