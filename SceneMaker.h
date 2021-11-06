@@ -17,7 +17,7 @@ public:
         int indirect_samples = 1;
         bool rayJitter = false;
 
-        auto x_dim = 640u;       //default 320
+        auto x_dim = 320u;       //default 320u
         auto y_dim = x_dim / aspect_ratio; //240p
         double fov = 140.0;
 
@@ -53,7 +53,7 @@ public:
 
 //    create lights
 //        auto boxLight = new BoxLight(Color(.9), Point(5, 3, 5), Point(6, 4, 6));
-        auto pointLight = new PointLight(Color(.9), Point(50, 30, 50));
+        auto pointLight = new PointLight(Color(.9), Point(35, 30, 80));
 //        create scene and set rendering values
         auto global_light = Color(.1);
         auto sunLight = new SunLight(Color(.9), Point(1, .5, 2));

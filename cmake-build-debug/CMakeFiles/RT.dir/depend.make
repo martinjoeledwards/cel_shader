@@ -32,11 +32,22 @@ CMakeFiles/RT.dir/Color.cpp.o: \
  ../Color.h \
  ../Point.h \
  ../UVPoint.h
-CMakeFiles/RT.dir/DataGrid.cpp.o: \
+CMakeFiles/RT.dir/Grids/DataGrid.cpp.o: \
  ../Color.h \
- ../DataGrid.cpp \
- ../DataGrid.h \
+ ../Grids/DataGrid.cpp \
+ ../Grids/DataGrid.h \
+ ../Grids/DistGrid.h \
+ ../Grids/NormalGrid.h \
  ../Helpers.h \
+ ../Point.h \
+ ../UVPoint.h
+CMakeFiles/RT.dir/Grids/DistGrid.cpp.o: \
+ ../Grids/DistGrid.cpp \
+ ../Grids/DistGrid.h
+CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o: \
+ ../Color.h \
+ ../Grids/NormalGrid.cpp \
+ ../Grids/NormalGrid.h \
  ../Point.h \
  ../UVPoint.h
 CMakeFiles/RT.dir/Helpers.cpp.o: \
@@ -173,7 +184,9 @@ CMakeFiles/RT.dir/raytracer.cpp.o: \
  ../Bounding/Node.h \
  ../Camera.h \
  ../Color.h \
- ../DataGrid.h \
+ ../Grids/DataGrid.h \
+ ../Grids/DistGrid.h \
+ ../Grids/NormalGrid.h \
  ../Helpers.h \
  ../Lights/BoxLight.h \
  ../Lights/Light.h \

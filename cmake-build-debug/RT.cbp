@@ -104,10 +104,22 @@
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.h">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.cpp">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DataGrid.cpp">
 			<Option target="RT"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.h">
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DataGrid.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DistGrid.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DistGrid.h">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.cpp">
+			<Option target="RT"/>
+		</Unit>
+		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.h">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Helpers.cpp">
@@ -144,12 +156,6 @@
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Material.h">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/NormalGrid.cpp">
-			<Option target="RT"/>
-		</Unit>
-		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/NormalGrid.h">
 			<Option target="RT"/>
 		</Unit>
 		<Unit filename="/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Objects/AABox.cpp">

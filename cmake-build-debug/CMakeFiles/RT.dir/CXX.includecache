@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.h
+string
+-
+Point.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Point.h
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.cpp
+NormalGrid.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.h
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.h
+../Color.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.h
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Point.h
+string
+-
+iostream
+-
+math.h
+-
+UVPoint.h
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/UVPoint.h
+
+/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/UVPoint.h
+iostream
+-
+

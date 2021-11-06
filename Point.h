@@ -28,6 +28,14 @@ struct Point {
         return point;
     }
 
+    Point operator+ (const double d) {
+        Point point;
+        point.x = this->x + d;
+        point.y = this->y + d;
+        point.z = this->z + d;
+        return point;
+    }
+
 //    Point operator- ( Point& p) {
 //        Point point;
 //        point.x = this->x - p.x;
@@ -51,6 +59,7 @@ struct Point {
         point.x = this->x * d;
         point.y = this->y * d;
         point.z = this->z * d;
+//        point.Print();
         return point;
     }
 

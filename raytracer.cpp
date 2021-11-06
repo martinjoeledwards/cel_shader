@@ -14,7 +14,7 @@
 #include <vector>
 #include <thread>
 #include "Color.h"
-#include "DataGrid.h"
+#include "Grids/DataGrid.h"
 #include "Helpers.h"
 #include "Point.h"
 #include "Ray.h"
@@ -29,14 +29,22 @@
 #include "Objects/AABox.h"
 #include "Lights/BoxLight.h"
 #include "SceneMaker.h"
+#include "Grids/NormalGrid.h"
+#include "Grids/DistGrid.h"
 #include <random>
-//bool multiThreading = false;
-bool multiThreading = true;
+bool multiThreading = false;
+//bool multiThreading = true;
 const int num_threads = (int) std::thread::hardware_concurrency() - 1;
 
 void renderRow(Scene myScene, DataGrid myGrid, int j, int x_dim){
     for (auto i = 0u; i < x_dim; i++) {
         myGrid.set(i, j, myScene.getColorRecursiveMulti(i, j) * 255.0);
+    }
+}
+
+void renderRowNormals(Scene myScene, NormalGrid myGrid, int j, int x_dim){
+    for (auto i = 0u; i < x_dim; i++) {
+        myGrid.set(i, j, myScene.getNormalMulti(i, j) * 255.0);
     }
 }
 
@@ -64,8 +72,9 @@ int main() {
 
     DataGrid myGrid(x_dim, y_dim);
     NormalGrid normGrid(x_dim, y_dim);
+    DistGrid distGrid(x_dim, y_dim);
 
-    if (multiThreading) {
+    if (multiThreading) {       //slower for cel shading
 
 //    main loop for everything
         for (auto j = 0u; j < y_dim; j++) {
@@ -82,6 +91,7 @@ int main() {
             }
 
             threads.emplace_back(renderRow, myScene, myGrid, j, x_dim);
+//            threads.emplace_back()
 
             my_prog.print_progress(j);
         }
@@ -95,16 +105,28 @@ int main() {
     } else {
         for (auto j = 0u; j < y_dim; j++) {
                 for (auto i = 0u; i < x_dim; i++) {
-
+                    normGrid.set(i, j, myScene.getNormalMulti(i, j));
+                    distGrid.set(i, j, myScene.getDistMulti(i, j));
                     myGrid.set(i, j, myScene.getColorRecursiveMulti(i, j) * 255.0);
                 }
             my_prog.print_progress(j);
         }
     }
 
+    normGrid.colorize();
+    DataGrid normalMap = DataGrid(normGrid);
+
+    distGrid.detectEdges();
+    distGrid.quantize(.5);
+    DataGrid finalGrid = DataGrid(distGrid);
+
+//    myGrid.addEdges(distGrid);
+
     my_prog.print_finish();
 
-    myGrid.save_image();
+    normalMap.save_image();
+//    finalGrid.save_image();
+//    myGrid.save_image();
 
     return 0;
 }

@@ -92,18 +92,18 @@ CMakeFiles/RT.dir/Color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Color.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Color.cpp -o CMakeFiles/RT.dir/Color.cpp.s
 
-CMakeFiles/RT.dir/DataGrid.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/DataGrid.cpp.o: ../DataGrid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RT.dir/DataGrid.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/DataGrid.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.cpp
+CMakeFiles/RT.dir/Grids/DataGrid.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Grids/DataGrid.cpp.o: ../Grids/DataGrid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/RT.dir/Grids/DataGrid.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Grids/DataGrid.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DataGrid.cpp
 
-CMakeFiles/RT.dir/DataGrid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/DataGrid.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.cpp > CMakeFiles/RT.dir/DataGrid.cpp.i
+CMakeFiles/RT.dir/Grids/DataGrid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Grids/DataGrid.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DataGrid.cpp > CMakeFiles/RT.dir/Grids/DataGrid.cpp.i
 
-CMakeFiles/RT.dir/DataGrid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/DataGrid.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/DataGrid.cpp -o CMakeFiles/RT.dir/DataGrid.cpp.s
+CMakeFiles/RT.dir/Grids/DataGrid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Grids/DataGrid.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DataGrid.cpp -o CMakeFiles/RT.dir/Grids/DataGrid.cpp.s
 
 CMakeFiles/RT.dir/Helpers.cpp.o: CMakeFiles/RT.dir/flags.make
 CMakeFiles/RT.dir/Helpers.cpp.o: ../Helpers.cpp
@@ -352,24 +352,37 @@ CMakeFiles/RT.dir/Bounding/Node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Bounding/Node.cpp.s"
 	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Bounding/Node.cpp -o CMakeFiles/RT.dir/Bounding/Node.cpp.s
 
-CMakeFiles/RT.dir/NormalGrid.cpp.o: CMakeFiles/RT.dir/flags.make
-CMakeFiles/RT.dir/NormalGrid.cpp.o: ../NormalGrid.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/RT.dir/NormalGrid.cpp.o"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/NormalGrid.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/NormalGrid.cpp
+CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o: ../Grids/NormalGrid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.cpp
 
-CMakeFiles/RT.dir/NormalGrid.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/NormalGrid.cpp.i"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/NormalGrid.cpp > CMakeFiles/RT.dir/NormalGrid.cpp.i
+CMakeFiles/RT.dir/Grids/NormalGrid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Grids/NormalGrid.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.cpp > CMakeFiles/RT.dir/Grids/NormalGrid.cpp.i
 
-CMakeFiles/RT.dir/NormalGrid.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/NormalGrid.cpp.s"
-	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/NormalGrid.cpp -o CMakeFiles/RT.dir/NormalGrid.cpp.s
+CMakeFiles/RT.dir/Grids/NormalGrid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Grids/NormalGrid.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/NormalGrid.cpp -o CMakeFiles/RT.dir/Grids/NormalGrid.cpp.s
+
+CMakeFiles/RT.dir/Grids/DistGrid.cpp.o: CMakeFiles/RT.dir/flags.make
+CMakeFiles/RT.dir/Grids/DistGrid.cpp.o: ../Grids/DistGrid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/RT.dir/Grids/DistGrid.cpp.o"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/RT.dir/Grids/DistGrid.cpp.o -c /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DistGrid.cpp
+
+CMakeFiles/RT.dir/Grids/DistGrid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RT.dir/Grids/DistGrid.cpp.i"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DistGrid.cpp > CMakeFiles/RT.dir/Grids/DistGrid.cpp.i
+
+CMakeFiles/RT.dir/Grids/DistGrid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RT.dir/Grids/DistGrid.cpp.s"
+	/usr/bin/c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/Grids/DistGrid.cpp -o CMakeFiles/RT.dir/Grids/DistGrid.cpp.s
 
 # Object files for target RT
 RT_OBJECTS = \
 "CMakeFiles/RT.dir/raytracer.cpp.o" \
 "CMakeFiles/RT.dir/Color.cpp.o" \
-"CMakeFiles/RT.dir/DataGrid.cpp.o" \
+"CMakeFiles/RT.dir/Grids/DataGrid.cpp.o" \
 "CMakeFiles/RT.dir/Helpers.cpp.o" \
 "CMakeFiles/RT.dir/Ray.cpp.o" \
 "CMakeFiles/RT.dir/Point.cpp.o" \
@@ -389,14 +402,15 @@ RT_OBJECTS = \
 "CMakeFiles/RT.dir/Random.cpp.o" \
 "CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o" \
 "CMakeFiles/RT.dir/Bounding/Node.cpp.o" \
-"CMakeFiles/RT.dir/NormalGrid.cpp.o"
+"CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o" \
+"CMakeFiles/RT.dir/Grids/DistGrid.cpp.o"
 
 # External object files for target RT
 RT_EXTERNAL_OBJECTS =
 
 RT.exe: CMakeFiles/RT.dir/raytracer.cpp.o
 RT.exe: CMakeFiles/RT.dir/Color.cpp.o
-RT.exe: CMakeFiles/RT.dir/DataGrid.cpp.o
+RT.exe: CMakeFiles/RT.dir/Grids/DataGrid.cpp.o
 RT.exe: CMakeFiles/RT.dir/Helpers.cpp.o
 RT.exe: CMakeFiles/RT.dir/Ray.cpp.o
 RT.exe: CMakeFiles/RT.dir/Point.cpp.o
@@ -416,10 +430,11 @@ RT.exe: CMakeFiles/RT.dir/Lights/BoxLight.cpp.o
 RT.exe: CMakeFiles/RT.dir/Random.cpp.o
 RT.exe: CMakeFiles/RT.dir/Bounding/BoundingBox.cpp.o
 RT.exe: CMakeFiles/RT.dir/Bounding/Node.cpp.o
-RT.exe: CMakeFiles/RT.dir/NormalGrid.cpp.o
+RT.exe: CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o
+RT.exe: CMakeFiles/RT.dir/Grids/DistGrid.cpp.o
 RT.exe: CMakeFiles/RT.dir/build.make
 RT.exe: CMakeFiles/RT.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable RT.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/cygdrive/c/Users/marti/Documents/School_Files/Fall_2021/CS_655/cel_shader/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable RT.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RT.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

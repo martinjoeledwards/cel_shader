@@ -117,6 +117,63 @@ public:
         return total.clip();        // clips to light value of 1
     }
 
+    Point getNormalMulti(unsigned int i, unsigned int j){
+        auto total = Point(0, 0, 0);
+        std::vector<Ray> inRays = myCamera->getRayList(i, j);
+        for(Ray curr_ray : inRays){
+            Point aggregate = GetPointNormal(curr_ray);
+//            std::cout << "\nagg is ";
+//            aggregate.Print();
+            total = total + aggregate;
+        }
+        total = total / (double)inRays.size();
+        norm(total).Print();
+        return norm(total);
+    }
+    double getDistMulti(unsigned int i, unsigned int j){
+        double total = 0;
+        std::vector<Ray> inRays = myCamera->getRayList(i, j);
+        for(Ray curr_ray : inRays){
+            double aggregate = GetPointDist(curr_ray);
+//            std::cout << "point dist is " << aggregate << std::endl;
+            total += aggregate;
+        }
+//        std::cout << "size of inrays is " << (double)inRays.size() << std::endl;
+//        std::cout << "total is " << total << std::endl;
+        total = total / (double)inRays.size();
+//        std::cout << "divided total is " << total << std::endl;
+        return total;
+    }
+
+    Point GetPointNormal(Ray inRay){
+        double lowest_t;
+
+        auto myPair = getClosestObject(inRay.getOrigin(), inRay.getDir());
+        Object *closest = myPair.first;
+        lowest_t = myPair.second;
+        if (!closest) {       //no object hit: return background color
+            return {0, 0, 0};   //normal of zeros for background
+        }
+
+        Point hit_point = inRay.getOrigin() + inRay.getDir() * lowest_t;
+        Point surf_norm = closest->getSurfNorm(hit_point, inRay);
+        return surf_norm;
+    }
+
+    double GetPointDist(Ray inRay){
+        double lowest_t;
+//        return .5;
+
+        auto myPair = getClosestObject(inRay.getOrigin(), inRay.getDir());
+        Object *closest = myPair.first;
+        lowest_t = myPair.second;
+        if (!closest) {       //no object hit: return background color
+            return 9999;   //for background, distance is large
+        }
+//        std::cout << lowest_t << std::endl;
+        return lowest_t;
+    }
+
     Color GetPixelColor(Ray inRay, int iters){
 
         double lowest_t;

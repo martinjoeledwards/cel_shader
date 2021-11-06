@@ -225,29 +225,77 @@ Color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Color.cpp.s
 .PHONY : Color.cpp.s
 
-DataGrid.o: DataGrid.cpp.o
-.PHONY : DataGrid.o
+Grids/DataGrid.o: Grids/DataGrid.cpp.o
+.PHONY : Grids/DataGrid.o
 
 # target to build an object file
-DataGrid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/DataGrid.cpp.o
-.PHONY : DataGrid.cpp.o
+Grids/DataGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/DataGrid.cpp.o
+.PHONY : Grids/DataGrid.cpp.o
 
-DataGrid.i: DataGrid.cpp.i
-.PHONY : DataGrid.i
+Grids/DataGrid.i: Grids/DataGrid.cpp.i
+.PHONY : Grids/DataGrid.i
 
 # target to preprocess a source file
-DataGrid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/DataGrid.cpp.i
-.PHONY : DataGrid.cpp.i
+Grids/DataGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/DataGrid.cpp.i
+.PHONY : Grids/DataGrid.cpp.i
 
-DataGrid.s: DataGrid.cpp.s
-.PHONY : DataGrid.s
+Grids/DataGrid.s: Grids/DataGrid.cpp.s
+.PHONY : Grids/DataGrid.s
 
 # target to generate assembly for a file
-DataGrid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/DataGrid.cpp.s
-.PHONY : DataGrid.cpp.s
+Grids/DataGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/DataGrid.cpp.s
+.PHONY : Grids/DataGrid.cpp.s
+
+Grids/DistGrid.o: Grids/DistGrid.cpp.o
+.PHONY : Grids/DistGrid.o
+
+# target to build an object file
+Grids/DistGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/DistGrid.cpp.o
+.PHONY : Grids/DistGrid.cpp.o
+
+Grids/DistGrid.i: Grids/DistGrid.cpp.i
+.PHONY : Grids/DistGrid.i
+
+# target to preprocess a source file
+Grids/DistGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/DistGrid.cpp.i
+.PHONY : Grids/DistGrid.cpp.i
+
+Grids/DistGrid.s: Grids/DistGrid.cpp.s
+.PHONY : Grids/DistGrid.s
+
+# target to generate assembly for a file
+Grids/DistGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/DistGrid.cpp.s
+.PHONY : Grids/DistGrid.cpp.s
+
+Grids/NormalGrid.o: Grids/NormalGrid.cpp.o
+.PHONY : Grids/NormalGrid.o
+
+# target to build an object file
+Grids/NormalGrid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/NormalGrid.cpp.o
+.PHONY : Grids/NormalGrid.cpp.o
+
+Grids/NormalGrid.i: Grids/NormalGrid.cpp.i
+.PHONY : Grids/NormalGrid.i
+
+# target to preprocess a source file
+Grids/NormalGrid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/NormalGrid.cpp.i
+.PHONY : Grids/NormalGrid.cpp.i
+
+Grids/NormalGrid.s: Grids/NormalGrid.cpp.s
+.PHONY : Grids/NormalGrid.s
+
+# target to generate assembly for a file
+Grids/NormalGrid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Grids/NormalGrid.cpp.s
+.PHONY : Grids/NormalGrid.cpp.s
 
 Helpers.o: Helpers.cpp.o
 .PHONY : Helpers.o
@@ -392,30 +440,6 @@ Material.s: Material.cpp.s
 Material.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/Material.cpp.s
 .PHONY : Material.cpp.s
-
-NormalGrid.o: NormalGrid.cpp.o
-.PHONY : NormalGrid.o
-
-# target to build an object file
-NormalGrid.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/NormalGrid.cpp.o
-.PHONY : NormalGrid.cpp.o
-
-NormalGrid.i: NormalGrid.cpp.i
-.PHONY : NormalGrid.i
-
-# target to preprocess a source file
-NormalGrid.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/NormalGrid.cpp.i
-.PHONY : NormalGrid.cpp.i
-
-NormalGrid.s: NormalGrid.cpp.s
-.PHONY : NormalGrid.s
-
-# target to generate assembly for a file
-NormalGrid.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/RT.dir/build.make CMakeFiles/RT.dir/NormalGrid.cpp.s
-.PHONY : NormalGrid.cpp.s
 
 Objects/AABox.o: Objects/AABox.cpp.o
 .PHONY : Objects/AABox.o
@@ -702,9 +726,15 @@ help:
 	@echo "... Color.o"
 	@echo "... Color.i"
 	@echo "... Color.s"
-	@echo "... DataGrid.o"
-	@echo "... DataGrid.i"
-	@echo "... DataGrid.s"
+	@echo "... Grids/DataGrid.o"
+	@echo "... Grids/DataGrid.i"
+	@echo "... Grids/DataGrid.s"
+	@echo "... Grids/DistGrid.o"
+	@echo "... Grids/DistGrid.i"
+	@echo "... Grids/DistGrid.s"
+	@echo "... Grids/NormalGrid.o"
+	@echo "... Grids/NormalGrid.i"
+	@echo "... Grids/NormalGrid.s"
 	@echo "... Helpers.o"
 	@echo "... Helpers.i"
 	@echo "... Helpers.s"
@@ -723,9 +753,6 @@ help:
 	@echo "... Material.o"
 	@echo "... Material.i"
 	@echo "... Material.s"
-	@echo "... NormalGrid.o"
-	@echo "... NormalGrid.i"
-	@echo "... NormalGrid.s"
 	@echo "... Objects/AABox.o"
 	@echo "... Objects/AABox.i"
 	@echo "... Objects/AABox.s"
